@@ -19,5 +19,5 @@ git checkout main<br>
 git pull origin main
 
 **Update your feature branch with main**<br>
-git checkout feature/branch-name
+git checkout feature/branch-name<br>
 git merge main 
