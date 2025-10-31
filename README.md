@@ -8,14 +8,14 @@ git clone <repo-url>
 git checkout -b feature/branch-name
 
 # Stage and commit changes
-git add .
+git add .<br>
 git commit -m "description of changes"
 
 # Push branch to GitHub
 git push -u origin feature/branch-name
 
 # Pull latest changes from main
-git checkout main
+git checkout main<br>
 git pull origin main
 
 # Update your feature branch with main
