@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "patient_id": "patient_25",
+    "model_version": "FNN_v1.0",
+    "analysis_date": "2025-11-20T00:54:33.122946"
+  },
+  "prediction": {
+    "class": "Healthy",
+    "probability": 0.0077932169660925865,
+    "confidence": 0.9922068119049072,
+    "threshold": 0.5
+  },
+  "shap_analysis": {
+    "total_shap_contribution": -0.7223774176090956,
+    "mean_abs_shap": 0.03819525567814708,
+    "features_increasing_pd": 4,
+    "features_decreasing_pd": 18
+  },
+  "top_contributing_features": [
+    {
+      "rank": 1,
+      "feature_name": "spread2",
+      "feature_value": -0.8008059377706256,
+      "shap_value": -0.12668941915035248,
+      "contribution": "decreases",
+      "clinical_name": "spread2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 2,
+      "feature_name": "PPE",
+      "feature_value": -1.0425606627965496,
+      "shap_value": -0.09979911148548126,
+      "contribution": "decreases",
+      "clinical_name": "Pitch Period Entropy",
+      "normal_range": "0.1-0.3",
+      "pd_indication": "Increased entropy indicates irregular vocal fold vibration"
+    },
+    {
+      "rank": 3,
+      "feature_name": "MDVP:Fhi(Hz)",
+      "feature_value": 0.7188745185625852,
+      "shap_value": -0.09941074997186661,
+      "contribution": "decreases",
+      "clinical_name": "Maximum Vocal Frequency",
+      "normal_range": "102-592 Hz",
+      "pd_indication": "Reduced range suggests limited vocal control"
+    },
+    {
+      "rank": 4,
+      "feature_name": "spread1",
+      "feature_value": -1.1495927707476643,
+      "shap_value": -0.09117691963911057,
+      "contribution": "decreases",
+      "clinical_name": "spread1",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 5,
+      "feature_name": "MDVP:Fo(Hz)",
+      "feature_value": 1.1516710916539525,
+      "shap_value": -0.08864828199148178,
+      "contribution": "decreases",
+      "clinical_name": "Fundamental Frequency",
+      "normal_range": "85-180 Hz (male), 165-255 Hz (female)",
+      "pd_indication": "Reduced variability indicates vocal rigidity"
+    }
+  ],
+  "all_feature_values": {
+    "MDVP:Fo(Hz)": 1.1516710916539525,
+    "MDVP:Fhi(Hz)": 0.7188745185625852,
+    "MDVP:Flo(Hz)": -0.8776068827864048,
+    "MDVP:Jitter(%)": 0.14879757947993483,
+    "MDVP:Jitter(Abs)": -0.4018994195636312,
+    "MDVP:RAP": 0.2748470115165217,
+    "MDVP:PPQ": 0.18665005436569362,
+    "Jitter:DDP": 0.2736394497703829,
+    "MDVP:Shimmer": -0.21102822017980763,
+    "MDVP:Shimmer(dB)": -0.14019810635183422,
+    "Shimmer:APQ3": -0.11100457874229347,
+    "Shimmer:APQ5": -0.17162382841707988,
+    "MDVP:APQ": -0.3846299344540866,
+    "Shimmer:DDA": -0.11068182017537832,
+    "NHR": 0.4852555918213902,
+    "HNR": -0.5703999329163294,
+    "RPDE": 0.09591006036187673,
+    "DFA": -0.6221363681291978,
+    "spread1": -1.1495927707476643,
+    "spread2": -0.8008059377706256,
+    "D2": -0.17149633460056574,
+    "PPE": -1.0425606627965496
+  },
+  "all_shap_values": {
+    "MDVP:Fo(Hz)": -0.08864828199148178,
+    "MDVP:Fhi(Hz)": -0.09941074997186661,
+    "MDVP:Flo(Hz)": 0.02904827892780304,
+    "MDVP:Jitter(%)": -0.013520224951207638,
+    "MDVP:Jitter(Abs)": 0.002971569076180458,
+    "MDVP:RAP": 0.0051919627003371716,
+    "MDVP:PPQ": -0.030393021181225777,
+    "Jitter:DDP": -0.011266788467764854,
+    "MDVP:Shimmer": -0.025737974792718887,
+    "MDVP:Shimmer(dB)": -0.020745914429426193,
+    "Shimmer:APQ3": -0.026733841747045517,
+    "Shimmer:APQ5": -0.01688149757683277,
+    "MDVP:APQ": -0.018057281151413918,
+    "Shimmer:DDA": -0.023585330694913864,
+    "NHR": -0.011468085460364819,
+    "HNR": 0.021747292950749397,
+    "RPDE": -0.027543209493160248,
+    "DFA": -0.048151642084121704,
+    "spread1": -0.09117691963911057,
+    "spread2": -0.12668941915035248,
+    "D2": -0.001527226995676756,
+    "PPE": -0.09979911148548126
+  },
+  "clinical_prompt": "Analyze the following Parkinson's Disease voice biomarker assessment:\n\nPATIENT ID: patient_25\nPREDICTION: Healthy\nCONFIDENCE: 99.2%\n\nTOP CONTRIBUTING FEATURES:\n\n1. spread2 (spread2)\n   Patient Value: -0.8008\n   Normal Range: Not specified\n   SHAP Impact: -0.1267 (\u2193 decreases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n2. Pitch Period Entropy (PPE)\n   Patient Value: -1.0426\n   Normal Range: 0.1-0.3\n   SHAP Impact: -0.0998 (\u2193 decreases PD probability)\n   Clinical Significance: Increased entropy indicates irregular vocal fold vibration\n\n3. Maximum Vocal Frequency (MDVP:Fhi(Hz))\n   Patient Value: 0.7189\n   Normal Range: 102-592 Hz\n   SHAP Impact: -0.0994 (\u2193 decreases PD probability)\n   Clinical Significance: Reduced range suggests limited vocal control\n\n4. spread1 (spread1)\n   Patient Value: -1.1496\n   Normal Range: Not specified\n   SHAP Impact: -0.0912 (\u2193 decreases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n5. Fundamental Frequency (MDVP:Fo(Hz))\n   Patient Value: 1.1517\n   Normal Range: 85-180 Hz (male), 165-255 Hz (female)\n   SHAP Impact: -0.0886 (\u2193 decreases PD probability)\n   Clinical Significance: Reduced variability indicates vocal rigidity\n\nTASK: Based on the SHAP analysis above, provide a clinical interpretation that:\n1. Summarizes the key acoustic findings in 2-3 sentences\n2. Explains what the top features indicate about vocal function\n3. Relates findings to PD motor symptoms (rigidity, bradykinesia, tremor)\n4. Assesses the reliability of this prediction based on feature patterns\n\nKeep the explanation concise and accessible to healthcare providers.\n"
+}

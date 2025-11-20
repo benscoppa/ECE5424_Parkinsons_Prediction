@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "patient_id": "patient_0",
+    "model_version": "FNN_v1.0",
+    "analysis_date": "2025-11-20T00:54:33.109189"
+  },
+  "prediction": {
+    "class": "Healthy",
+    "probability": 0.3004406988620758,
+    "confidence": 0.6995593309402466,
+    "threshold": 0.5
+  },
+  "shap_analysis": {
+    "total_shap_contribution": -0.4297298491001129,
+    "mean_abs_shap": 0.04072898550128395,
+    "features_increasing_pd": 11,
+    "features_decreasing_pd": 11
+  },
+  "top_contributing_features": [
+    {
+      "rank": 1,
+      "feature_name": "RPDE",
+      "feature_value": 0.9643559392281215,
+      "shap_value": -0.2135709971189499,
+      "contribution": "decreases",
+      "clinical_name": "Recurrence Period Density Entropy",
+      "normal_range": "0.4-0.7",
+      "pd_indication": "Altered RPDE reflects changes in vocal signal complexity"
+    },
+    {
+      "rank": 2,
+      "feature_name": "spread2",
+      "feature_value": -1.1130128388448726,
+      "shap_value": -0.15959645807743073,
+      "contribution": "decreases",
+      "clinical_name": "spread2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 3,
+      "feature_name": "D2",
+      "feature_value": -0.8463968940548359,
+      "shap_value": -0.09137323498725891,
+      "contribution": "decreases",
+      "clinical_name": "D2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 4,
+      "feature_name": "DFA",
+      "feature_value": -1.1553488063678083,
+      "shap_value": 0.05151229351758957,
+      "contribution": "increases",
+      "clinical_name": "Detrended Fluctuation Analysis",
+      "normal_range": "0.6-0.7",
+      "pd_indication": "Abnormal DFA indicates disrupted vocal control dynamics"
+    },
+    {
+      "rank": 5,
+      "feature_name": "MDVP:RAP",
+      "feature_value": -0.6642930133376,
+      "shap_value": -0.04838119447231293,
+      "contribution": "decreases",
+      "clinical_name": "MDVP:RAP",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    }
+  ],
+  "all_feature_values": {
+    "MDVP:Fo(Hz)": -0.9190685222042366,
+    "MDVP:Fhi(Hz)": -0.21712299794217949,
+    "MDVP:Flo(Hz)": -0.4455603538856714,
+    "MDVP:Jitter(%)": -0.6370267124068281,
+    "MDVP:Jitter(Abs)": -0.4018994195636312,
+    "MDVP:RAP": -0.6642930133376,
+    "MDVP:PPQ": -0.5546577693830375,
+    "Jitter:DDP": -0.6632462196414036,
+    "MDVP:Shimmer": -0.7480189429945204,
+    "MDVP:Shimmer(dB)": -0.7524105749055244,
+    "Shimmer:APQ3": -0.8881277791750339,
+    "Shimmer:APQ5": -0.6652518619148807,
+    "MDVP:APQ": -0.42426733570857367,
+    "Shimmer:DDA": -0.8881434961384941,
+    "NHR": -0.4335164674659422,
+    "HNR": 0.5239726392655514,
+    "RPDE": 0.9643559392281215,
+    "DFA": -1.1553488063678083,
+    "spread1": 0.08443259466728534,
+    "spread2": -1.1130128388448726,
+    "D2": -0.8463968940548359,
+    "PPE": 0.08671194470139681
+  },
+  "all_shap_values": {
+    "MDVP:Fo(Hz)": 0.020828593522310257,
+    "MDVP:Fhi(Hz)": 0.011731374077498913,
+    "MDVP:Flo(Hz)": 0.020357299596071243,
+    "MDVP:Jitter(%)": 0.01267223246395588,
+    "MDVP:Jitter(Abs)": 0.005127393174916506,
+    "MDVP:RAP": -0.04838119447231293,
+    "MDVP:PPQ": 0.01858794502913952,
+    "Jitter:DDP": -0.02069689705967903,
+    "MDVP:Shimmer": -0.02267793007194996,
+    "MDVP:Shimmer(dB)": -0.03664661943912506,
+    "Shimmer:APQ3": -0.004131636582314968,
+    "Shimmer:APQ5": -0.0165976844727993,
+    "MDVP:APQ": -0.011160476133227348,
+    "Shimmer:DDA": 0.004973873030394316,
+    "NHR": 0.005731936544179916,
+    "HNR": -0.038050636649131775,
+    "RPDE": -0.2135709971189499,
+    "DFA": 0.05151229351758957,
+    "spread1": 0.0427355095744133,
+    "spread2": -0.15959645807743073,
+    "D2": -0.09137323498725891,
+    "PPE": 0.038895465433597565
+  },
+  "clinical_prompt": "Analyze the following Parkinson's Disease voice biomarker assessment:\n\nPATIENT ID: patient_0\nPREDICTION: Healthy\nCONFIDENCE: 70.0%\n\nTOP CONTRIBUTING FEATURES:\n\n1. Recurrence Period Density Entropy (RPDE)\n   Patient Value: 0.9644\n   Normal Range: 0.4-0.7\n   SHAP Impact: -0.2136 (\u2193 decreases PD probability)\n   Clinical Significance: Altered RPDE reflects changes in vocal signal complexity\n\n2. spread2 (spread2)\n   Patient Value: -1.1130\n   Normal Range: Not specified\n   SHAP Impact: -0.1596 (\u2193 decreases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n3. D2 (D2)\n   Patient Value: -0.8464\n   Normal Range: Not specified\n   SHAP Impact: -0.0914 (\u2193 decreases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n4. Detrended Fluctuation Analysis (DFA)\n   Patient Value: -1.1553\n   Normal Range: 0.6-0.7\n   SHAP Impact: 0.0515 (\u2191 increases PD probability)\n   Clinical Significance: Abnormal DFA indicates disrupted vocal control dynamics\n\n5. MDVP:RAP (MDVP:RAP)\n   Patient Value: -0.6643\n   Normal Range: Not specified\n   SHAP Impact: -0.0484 (\u2193 decreases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\nTASK: Based on the SHAP analysis above, provide a clinical interpretation that:\n1. Summarizes the key acoustic findings in 2-3 sentences\n2. Explains what the top features indicate about vocal function\n3. Relates findings to PD motor symptoms (rigidity, bradykinesia, tremor)\n4. Assesses the reliability of this prediction based on feature patterns\n\nKeep the explanation concise and accessible to healthcare providers.\n"
+}

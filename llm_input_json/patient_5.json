@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "patient_id": "patient_5",
+    "model_version": "FNN_v1.0",
+    "analysis_date": "2025-11-20T00:54:33.112149"
+  },
+  "prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9999979734420776,
+    "confidence": 0.9999979734420776,
+    "threshold": 0.5
+  },
+  "shap_analysis": {
+    "total_shap_contribution": 0.2698274079230032,
+    "mean_abs_shap": 0.016149893447039754,
+    "features_increasing_pd": 14,
+    "features_decreasing_pd": 8
+  },
+  "top_contributing_features": [
+    {
+      "rank": 1,
+      "feature_name": "spread2",
+      "feature_value": 1.0745390457621393,
+      "shap_value": 0.07796171307563782,
+      "contribution": "increases",
+      "clinical_name": "spread2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 2,
+      "feature_name": "D2",
+      "feature_value": 1.8763735562864323,
+      "shap_value": 0.07345813512802124,
+      "contribution": "increases",
+      "clinical_name": "D2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 3,
+      "feature_name": "HNR",
+      "feature_value": -1.2934877512571619,
+      "shap_value": 0.050260089337825775,
+      "contribution": "increases",
+      "clinical_name": "Harmonics-to-Noise Ratio",
+      "normal_range": ">13 dB",
+      "pd_indication": "Reduced HNR indicates increased vocal noise and hoarseness"
+    },
+    {
+      "rank": 4,
+      "feature_name": "PPE",
+      "feature_value": -0.06818089639678192,
+      "shap_value": 0.029514238238334656,
+      "contribution": "increases",
+      "clinical_name": "Pitch Period Entropy",
+      "normal_range": "0.1-0.3",
+      "pd_indication": "Increased entropy indicates irregular vocal fold vibration"
+    },
+    {
+      "rank": 5,
+      "feature_name": "spread1",
+      "feature_value": 0.02436778552340887,
+      "shap_value": 0.028206966817378998,
+      "contribution": "increases",
+      "clinical_name": "spread1",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    }
+  ],
+  "all_feature_values": {
+    "MDVP:Fo(Hz)": 0.6479383922131552,
+    "MDVP:Fhi(Hz)": 0.03309437692751471,
+    "MDVP:Flo(Hz)": 0.902341885465952,
+    "MDVP:Jitter(%)": -0.44677451542371704,
+    "MDVP:Jitter(Abs)": -0.6898141396771803,
+    "MDVP:RAP": -0.37376768190790777,
+    "MDVP:PPQ": -0.3656969515647335,
+    "Jitter:DDP": -0.3749737059762385,
+    "MDVP:Shimmer": 0.4684511300748489,
+    "MDVP:Shimmer(dB)": 0.2507947307076655,
+    "Shimmer:APQ3": 0.5338003131034234,
+    "Shimmer:APQ5": 0.5879963379959211,
+    "MDVP:APQ": 0.27737382679623046,
+    "Shimmer:DDA": 0.5338016521090334,
+    "NHR": 0.07374294431661588,
+    "HNR": -1.2934877512571619,
+    "RPDE": 0.8202419195455439,
+    "DFA": 0.17480152885903216,
+    "spread1": 0.02436778552340887,
+    "spread2": 1.0745390457621393,
+    "D2": 1.8763735562864323,
+    "PPE": -0.06818089639678192
+  },
+  "all_shap_values": {
+    "MDVP:Fo(Hz)": 0.011132905259728432,
+    "MDVP:Fhi(Hz)": 0.004966219887137413,
+    "MDVP:Flo(Hz)": -0.0013281414285302162,
+    "MDVP:Jitter(%)": -0.0011633004760369658,
+    "MDVP:Jitter(Abs)": 0.00579379266127944,
+    "MDVP:RAP": 0.0008001654059626162,
+    "MDVP:PPQ": -0.0041224416345357895,
+    "Jitter:DDP": 0.00043355327215977013,
+    "MDVP:Shimmer": 0.00257901125587523,
+    "MDVP:Shimmer(dB)": 0.007140851579606533,
+    "Shimmer:APQ3": -0.0007360044401139021,
+    "Shimmer:APQ5": -0.00011490082397358492,
+    "MDVP:APQ": 0.015240412205457687,
+    "Shimmer:DDA": -0.016353221610188484,
+    "NHR": -0.00476276408880949,
+    "HNR": 0.050260089337825775,
+    "RPDE": -0.014154349453747272,
+    "DFA": 0.005074477754533291,
+    "spread1": 0.028206966817378998,
+    "spread2": 0.07796171307563782,
+    "D2": 0.07345813512802124,
+    "PPE": 0.029514238238334656
+  },
+  "clinical_prompt": "Analyze the following Parkinson's Disease voice biomarker assessment:\n\nPATIENT ID: patient_5\nPREDICTION: Parkinson's Disease\nCONFIDENCE: 100.0%\n\nTOP CONTRIBUTING FEATURES:\n\n1. spread2 (spread2)\n   Patient Value: 1.0745\n   Normal Range: Not specified\n   SHAP Impact: 0.0780 (\u2191 increases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n2. D2 (D2)\n   Patient Value: 1.8764\n   Normal Range: Not specified\n   SHAP Impact: 0.0735 (\u2191 increases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n3. Harmonics-to-Noise Ratio (HNR)\n   Patient Value: -1.2935\n   Normal Range: >13 dB\n   SHAP Impact: 0.0503 (\u2191 increases PD probability)\n   Clinical Significance: Reduced HNR indicates increased vocal noise and hoarseness\n\n4. Pitch Period Entropy (PPE)\n   Patient Value: -0.0682\n   Normal Range: 0.1-0.3\n   SHAP Impact: 0.0295 (\u2191 increases PD probability)\n   Clinical Significance: Increased entropy indicates irregular vocal fold vibration\n\n5. spread1 (spread1)\n   Patient Value: 0.0244\n   Normal Range: Not specified\n   SHAP Impact: 0.0282 (\u2191 increases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\nTASK: Based on the SHAP analysis above, provide a clinical interpretation that:\n1. Summarizes the key acoustic findings in 2-3 sentences\n2. Explains what the top features indicate about vocal function\n3. Relates findings to PD motor symptoms (rigidity, bradykinesia, tremor)\n4. Assesses the reliability of this prediction based on feature patterns\n\nKeep the explanation concise and accessible to healthcare providers.\n"
+}
