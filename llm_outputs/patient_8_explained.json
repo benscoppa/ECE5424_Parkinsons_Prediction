@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_8",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.009177332744002342,
+    "confidence": 0.9908226728439331,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts a healthy individual with 99.1% confidence, indicating that the voice biomarkers do not strongly suggest Parkinson's Disease (PD).\n\n**Key Drivers**: The top features driving this prediction are:\n\n* **Spread2**, **Spread1**, and **Fundamental Frequency** all contribute to decreasing PD probability by reflecting vocal stability and rigidity.\n* **Pitch Period Entropy** indicates irregular vocal fold vibration, which is not typical of PD.\n\nThese findings suggest that the patient's voice exhibits a stable fundamental frequency, minimal variability in pitch, and regular vocal fold vibrations. This pattern is more consistent with healthy vocal function than PD-related motor symptoms like rigidity, bradykinesia, or tremor.\n\n**Conclusion**: The AI assessment relies heavily on features indicating vocal stability and rigidity, which are not typical of early-stage PD. While the **Absolute Jitter** feature suggests some degree of neuromuscular instability, it is not strong enough to override the other features' contributions. Overall, this prediction appears reliable based on the feature patterns, but a comprehensive clinical evaluation is still necessary for definitive diagnosis.",
+  "generation_time_seconds": 16.5254168510437,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:46:57"
+}

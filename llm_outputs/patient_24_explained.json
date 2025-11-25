@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_24",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 1.0,
+    "confidence": 1.0,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts Parkinson's Disease with 100% confidence, indicating significant acoustic changes in the patient's voice.\n\n**Key Drivers**: The top features contributing to this prediction are:\n\n1. **Spread2**: An increase in spread2 suggests an irregularity in vocal fold vibration, which may be related to motor symptoms like rigidity and bradykinesia.\n2. **Harmonics-to-Noise Ratio (HNR)**: A reduced HNR indicates increased vocal noise and hoarseness, potentially linked to tremors or difficulty articulating words.\n3. **Pitch Period Entropy (PPE)**: Elevated PPE suggests irregular vocal fold vibration, which may be associated with motor symptoms like rigidity and bradykinesia.\n\n**Conclusion**: The AI assessment highlights significant changes in the patient's voice, including irregularities in vocal fold vibration, increased vocal noise, and limited vocal control. These findings are consistent with the motor symptoms characteristic of Parkinson's Disease, such as rigidity, bradykinesia, and tremors. While this prediction is highly confident, it is essential to note that a definitive diagnosis can only be made through clinical evaluation and other diagnostic tests.\n\nIn this case, the AI assessment provides valuable insights into the patient's vocal function, which may inform further investigation and treatment planning. However, it is crucial for healthcare providers to verify these findings with additional testing and clinical examination.",
+  "generation_time_seconds": 20.01915216445923,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:41:31"
+}

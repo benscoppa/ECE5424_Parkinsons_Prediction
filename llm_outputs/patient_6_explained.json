@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_6",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.8759065866470337,
+    "confidence": 0.8759065866470337,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts Parkinson's Disease with 87.6% confidence, suggesting that the patient's voice biomarkers are indicative of neuromuscular instability.\n\n**Key Drivers**: The top features contributing to this prediction are Absolute Jitter (MDVP:Jitter(Abs)), Pitch Period Entropy (PPE), and Shimmer:DDA. These findings indicate:\n\n* **Vocal instability**: Increased Absolute Jitter suggests neuromuscular weakness, which can manifest as rigidity or bradykinesia in PD patients.\n* **Irregular vocal fold vibration**: Higher PPE indicates complex disruptions in voice production, potentially related to tremors or motor symptoms in PD.\n* **Vocal strain**: Shimmer:DDA values suggest excessive vocal cord movement, possibly reflecting the patient's attempts to compensate for neuromuscular deficits.\n\n**Conclusion**: The AI assessment suggests that the patient's voice biomarkers are consistent with Parkinson's Disease. While this prediction is not a definitive diagnosis, it may warrant further evaluation and monitoring. The reliability of this prediction is supported by the presence of multiple features indicative of vocal instability and irregularities, which are commonly seen in PD patients.",
+  "generation_time_seconds": 17.373329877853394,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:38:45"
+}

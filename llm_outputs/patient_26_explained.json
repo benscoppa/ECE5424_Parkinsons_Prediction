@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_26",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9996009469032288,
+    "confidence": 0.9996009469032288,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts a 100% probability of Parkinson's Disease (PD) in patient_26, suggesting significant acoustic changes indicative of vocal instability.\n\n**Key Drivers**:\n\n1. **Spread2**: This feature indicates increased variability in vocal pitch, which is clinically significant as it may reflect irregularities in neuromuscular control.\n2. **Pitch Period Entropy (PPE)**: The elevated entropy value suggests irregular vocal fold vibration, potentially related to PD's motor symptoms of rigidity and bradykinesia.\n3. **Harmonics-to-Noise Ratio (HNR)**: The reduced HNR value indicates increased vocal noise and hoarseness, which may be linked to PD's motor symptoms of tremor.\n\n**Conclusion**: The top features collectively suggest a complex interplay between neuromuscular instability, irregular vocal fold vibration, and increased vocal noise. These findings are consistent with the clinical presentation of Parkinson's Disease, supporting the AI prediction. While this assessment is not a definitive diagnosis, it highlights potential acoustic biomarkers for further evaluation and confirmation by a healthcare professional.",
+  "generation_time_seconds": 16.677101850509644,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:44:17"
+}

@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_35",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9911258816719055,
+    "confidence": 0.9911258816719055,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts Parkinson's Disease with 99.1% confidence, suggesting a strong correlation between the patient's voice biomarkers and the disease.\n\n**Key Drivers**: The top features contributing to this prediction are:\n\n* **Spread1** (0.7534) and **Spread2** (0.2391), which indicate increased variability in vocal pitch, potentially reflecting neuromuscular instability.\n* **Absolute Jitter** (-0.0490), suggesting a decrease in PD probability due to relatively normal jitter levels.\n\nThese features collectively suggest that the patient's voice exhibits some degree of instability and limited control, which may be related to motor symptoms such as rigidity and bradykinesia (slow movement).\n\n**Conclusion**: The AI assessment is highly reliable based on these feature patterns. While the prediction is not definitive, it highlights potential vocal changes that could be indicative of Parkinson's Disease. A thorough clinical evaluation would be necessary to confirm this diagnosis.",
+  "generation_time_seconds": 15.524335861206055,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:37:19"
+}

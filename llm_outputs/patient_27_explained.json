@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_27",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9978324770927429,
+    "confidence": 0.9978324770927429,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts a high probability of Parkinson's Disease (PD) with 99.8% confidence, indicating significant acoustic changes in the patient's voice.\n\n**Key Drivers**: The top contributing features suggest vocal instability and rigidity, which are indicative of PD motor symptoms. Specifically:\n\n1. **Spread2** and **Spread1** indicate vocal weakness and reduced variability, consistent with vocal rigidity.\n2. **Fundamental Frequency (Fo)** shows a relatively normal value, but the SHAP impact suggests that the patient's voice lacks the typical variability seen in healthy individuals, also indicative of vocal rigidity.\n\nThese findings are related to PD motor symptoms such as:\n\n* Rigidity: The reduced variability and weakness in the patient's voice suggest an inability to modulate pitch and volume, a hallmark of PD.\n* Bradykinesia: The altered RPDE (Recurrence Period Density Entropy) reflects changes in vocal signal complexity, which may be related to slowed or hesitant speech patterns.\n\n**Conclusion**: While this AI assessment is not a definitive diagnosis, the acoustic findings suggest significant changes in the patient's voice that are consistent with PD motor symptoms. The high confidence level and multiple contributing features support the reliability of this prediction. However, it is essential for a clinical evaluation by a healthcare professional to confirm or rule out a PD diagnosis.",
+  "generation_time_seconds": 19.214489698410034,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:43:41"
+}

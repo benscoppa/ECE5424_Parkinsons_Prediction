@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_23",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.2776012420654297,
+    "confidence": 0.7223987579345703,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts a healthy individual with 72.2% confidence, driven by reduced variability in fundamental frequency, limited vocal range, and irregular vocal fold vibration.\n\n**Key Drivers**:\n\n1. **Fundamental Frequency (Fo)**: A reduced variability in Fo indicates vocal rigidity, which is consistent with PD motor symptoms of bradykinesia (slow movement).\n2. **Maximum Vocal Frequency (Fhi)**: A reduced range suggests limited vocal control, mirroring the motor symptoms of tremor and rigidity.\n3. **Pitch Period Entropy (PPE)**: Increased entropy indicates irregular vocal fold vibration, which may be related to PD's motor symptoms of bradykinesia.\n\n**Conclusion**: The AI assessment is based on acoustic features that suggest reduced vocal variability, limited range, and irregular vibration, which are consistent with PD motor symptoms. While the prediction is not definitive (72.2% confidence), the feature patterns indicate a possible association with Parkinson's Disease. This screening result should be considered in conjunction with other clinical evaluations to determine the patient's overall health status.",
+  "generation_time_seconds": 17.10727882385254,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:37:04"
+}

@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_11",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9921501874923706,
+    "confidence": 0.9921501874923706,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI model predicts a high probability of Parkinson's Disease (PD) in patient_11 with 99.2% confidence.\n\n**Key Drivers**: The top contributing features indicate vocal instability, irregularities, and potential hoarseness. Specifically:\n\n1. **Spread1**: Abnormal spread patterns suggest an increase in PD probability.\n2. **Pitch Period Entropy (PPE)**: Higher entropy indicates irregular vocal fold vibration, which is a hallmark of PD.\n3. **Harmonics-to-Noise Ratio (HNR)**: Reduced HNR suggests increased vocal noise and hoarseness, often seen in PD patients.\n\n**Conclusion**: The AI assessment suggests that patient_11's voice biomarkers are indicative of vocal instability, irregularities, and potential hoarseness, which may be related to motor symptoms such as rigidity, bradykinesia, and tremor characteristic of Parkinson's Disease. While this prediction is highly confident (99.2%), it is essential to note that AI-assisted screening results should not replace a comprehensive clinical evaluation.\n\nIn terms of reliability, the presence of multiple features contributing to the PD prediction suggests a robust pattern. However, as with any AI-based assessment, further validation through clinical examination and other diagnostic tools is necessary for definitive diagnosis.",
+  "generation_time_seconds": 18.76959991455078,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:42:44"
+}
