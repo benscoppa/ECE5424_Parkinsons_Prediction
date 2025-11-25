@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_16",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 1.0,
+    "confidence": 1.0,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary:** The AI assessment predicts Parkinson's Disease with 100% confidence, suggesting a strong correlation between the patient's voice biomarkers and PD symptoms.\n\n**Key Drivers:**\n\n1. **Spread2** and **Spread1**: These features indicate an irregularity in vocal fold vibration patterns, which is consistent with the motor symptoms of rigidity and bradykinesia seen in Parkinson's Disease.\n2. **Pitch Period Entropy (PPE)**: The increased entropy suggests that the patient's vocal folds are vibrating irregularly, further supporting the diagnosis of PD.\n3. **Harmonics-to-Noise Ratio (HNR)**: The reduced HNR indicates hoarseness and breathiness, which can be related to the motor symptoms of tremor.\n\n**Conclusion:** The AI assessment is highly reliable due to the consistent patterns across multiple features. The findings suggest that the patient's voice biomarkers are indicative of Parkinson's Disease, particularly in terms of vocal fold vibration irregularities and motor symptoms such as rigidity, bradykinesia, and tremor.",
+  "generation_time_seconds": 15.921685934066772,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:46:40"
+}

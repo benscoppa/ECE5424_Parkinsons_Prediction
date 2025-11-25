@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_3",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9912012815475464,
+    "confidence": 0.9912012815475464,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI model predicts Parkinson's Disease with 99.1% confidence, suggesting a strong correlation between the patient's voice biomarkers and PD characteristics.\n\n**Key Drivers**: The top contributing features indicate vocal instability and rigidity. Spread2 and D2 suggest an increase in vocal variability, which may be related to motor symptoms such as bradykinesia (slow movement) or tremor. Pitch Period Entropy (PPE) indicates irregular vocal fold vibration, potentially reflecting the motor symptoms of PD.\n\n**Conclusion**: The AI assessment suggests that the patient's voice biomarkers are consistent with Parkinson's Disease. The top features imply a combination of vocal instability and rigidity, which may be related to motor symptoms such as bradykinesia or tremor. While this prediction is highly confident, it is essential to note that this is an AI screening result and not a definitive medical diagnosis. A comprehensive clinical evaluation should be performed to confirm the diagnosis.\n\nIn terms of reliability, the feature patterns suggest a strong correlation between the patient's voice biomarkers and PD characteristics. The high confidence level in the prediction supports the notion that these features are robust indicators of PD. However, it is crucial to consider the limitations of this AI assessment and the need for further clinical evaluation to confirm the diagnosis.",
+  "generation_time_seconds": 18.559722900390625,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:43:22"
+}

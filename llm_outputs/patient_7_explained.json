@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_7",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.914674699306488,
+    "confidence": 0.914674699306488,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI model predicts Parkinson's Disease with a confidence level of 91.5% based on acoustic features indicating vocal rigidity, instability, and limited control.\n\n**Key Drivers**:\n\n1. **Fundamental Frequency (Fo)**: A reduced variability in Fo suggests vocal rigidity, which is consistent with the motor symptoms of bradykinesia (slow movement) and rigidity in Parkinson's Disease.\n2. **Absolute Jitter**: Increased jitter reflects neuromuscular instability, mirroring the tremors often seen in PD patients.\n\n**Conclusion**: The top features indicate a combination of vocal rigidity, instability, and limited control, which are all characteristic motor symptoms of Parkinson's Disease. While this AI assessment is not a definitive diagnosis, it suggests that further evaluation may be warranted to confirm or rule out the presence of PD.",
+  "generation_time_seconds": 13.612210988998413,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:36:47"
+}

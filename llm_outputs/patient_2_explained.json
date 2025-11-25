@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_2",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9999902248382568,
+    "confidence": 0.9999902248382568,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI model predicts a 100% probability of Parkinson's Disease (PD) in patient_2, indicating significant acoustic changes in their voice.\n\n**Key Drivers**: The top contributing features suggest abnormal vocal function, including:\n\n1. **Spread2**: An increase in spread2 indicates irregular vocal fold movement, which can lead to difficulties with articulation and speech clarity.\n2. **Pitch Period Entropy (PPE)**: Elevated PPE values indicate irregular vocal fold vibration, potentially causing hoarseness or breathiness.\n3. **Detrended Fluctuation Analysis (DFA)**: Abnormal DFA suggests disrupted vocal control dynamics, which can result in difficulties with speaking and articulation.\n\n**Conclusion**: These acoustic findings are consistent with the motor symptoms of PD, such as rigidity, bradykinesia, and tremor. The patient's voice may exhibit weakness, instability, and irregularities, which can impact their ability to communicate effectively. While this AI assessment is highly predictive, it is essential to note that a definitive diagnosis can only be made through clinical evaluation and other diagnostic tests.\n\nThe reliability of this prediction is high due to the presence of multiple features indicating abnormal vocal function. However, as with any AI-assisted screening result, further clinical evaluation is necessary for an accurate diagnosis and treatment plan.",
+  "generation_time_seconds": 19.409502029418945,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:44:00"
+}

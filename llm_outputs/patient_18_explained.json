@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_18",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9998053908348083,
+    "confidence": 0.9998053908348083,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary:** The AI assessment predicts a high probability of Parkinson's Disease (PD) with 100% confidence. The acoustic findings suggest vocal instability, irregularities in vocal fold vibration, and motor impairment.\n\n**Key Drivers:**\n\n1. **MDVP:RAP**: This feature indicates vocal instability or weakness, which is consistent with PD symptoms such as rigidity and bradykinesia.\n2. **PPE**: Increased entropy in pitch period entropy suggests irregular vocal fold vibration, potentially contributing to the development of tremors.\n3. **HNR**: Reduced harmonics-to-noise ratio implies increased vocal noise and hoarseness, which can be a manifestation of PD motor symptoms.\n\n**Conclusion:** The top features collectively suggest that the patient's voice is characterized by instability, irregularities in vocal fold vibration, and motor impairment. These findings are consistent with the motor symptoms typically seen in Parkinson's Disease, such as rigidity, bradykinesia, and tremors. While this AI assessment is highly confident, it is essential to note that a definitive diagnosis can only be made through clinical evaluation and other diagnostic tests.\n\nThe reliability of this prediction is high due to the presence of multiple features indicating vocal instability, irregularities in vocal fold vibration, and motor impairment, which are all consistent with PD symptoms. However, as with any AI-assisted screening result, it is crucial to verify these findings through further clinical evaluation and testing.",
+  "generation_time_seconds": 20.01255488395691,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:39:23"
+}

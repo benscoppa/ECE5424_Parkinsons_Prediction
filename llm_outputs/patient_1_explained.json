@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_1",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9941965341567993,
+    "confidence": 0.9941965341567993,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI model predicts Parkinson's Disease with 99.4% confidence, suggesting a strong correlation between the patient's voice biomarkers and PD characteristics.\n\n**Key Drivers**: The top contributing features indicate irregular vocal fold vibration (PPE), disrupted vocal control dynamics (DFA), and limited vocal range (MDVP:Fhi(Hz)). These findings suggest that the patient's voice is characterized by increased entropy, abnormal fluctuations, and reduced frequency, which may be related to motor symptoms such as rigidity, bradykinesia, and tremor.\n\n**Conclusion**: The AI assessment suggests that the patient's voice biomarkers are indicative of Parkinson's Disease. The top features indicate a complex interplay between vocal instability, disrupted control dynamics, and limited range, which may be reflective of the motor symptoms commonly seen in PD patients. While this prediction is highly confident, it is essential to note that only a comprehensive clinical evaluation can confirm the diagnosis.",
+  "generation_time_seconds": 13.998672246932983,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:40:33"
+}

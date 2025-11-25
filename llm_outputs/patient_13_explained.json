@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_13",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9910436868667603,
+    "confidence": 0.9910436868667603,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts Parkinson's Disease with 99.1% confidence, indicating a strong likelihood of the patient having PD.\n\n**Key Drivers**: The top contributing features suggest altered vocal signal complexity (RPDE), reduced variability in fundamental frequency (MDVP:Fo), increased jitter (Absolute Jitter), and disrupted vocal control dynamics (DFA). These findings collectively indicate impaired neuromuscular coordination, rigidity, and instability in the patient's vocal system.\n\n**Conclusion**: The AI-assisted screening result suggests that the patient may be experiencing motor symptoms characteristic of Parkinson's Disease, such as rigidity and bradykinesia. The reduced variability in fundamental frequency and increased jitter may reflect difficulties with smooth articulation and speech flow. While this prediction is highly confident, it is essential to note that a definitive diagnosis can only be made through clinical evaluation and additional testing.\n\nThe reliability of this prediction is high due to the consistent pattern of features indicating impaired vocal function and motor control. However, as with any AI-assisted screening result, it is crucial to consider individual patient factors and potential confounding variables before making a final diagnosis or treatment plan.",
+  "generation_time_seconds": 16.782000064849854,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:39:40"
+}

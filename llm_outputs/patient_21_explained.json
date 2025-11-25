@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_21",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 1.0,
+    "confidence": 1.0,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts Parkinson's Disease with 100% confidence, indicating significant acoustic abnormalities in the patient's voice.\n\n**Key Drivers**: The top contributing features suggest irregular vocal fold vibration (PPE), amplitude perturbation and weak voice (Shimmer), and disrupted vocal control dynamics (DFA). These findings are indicative of compromised vocal function.\n\n**Clinical Interpretation**: The increased entropy in PPE indicates irregular vocal fold vibration, which may be related to the rigidity and bradykinesia characteristic of Parkinson's Disease. The elevated shimmer suggests amplitude perturbations, potentially contributing to a weak or strained voice. The abnormal DFA values imply disrupted vocal control dynamics, which could be linked to tremors.\n\n**Reliability Assessment**: The high SHAP impact values for PPE, Shimmer, and DFA suggest that these features are strong indicators of Parkinson's Disease. The consistent directionality of the SHAP impacts (all \u2191) reinforces the reliability of this prediction. However, it is essential to note that AI assessments should not be used as a standalone diagnostic tool but rather as a screening result to inform further evaluation.\n\nIn summary, the patient's voice biomarkers suggest compromised vocal function, which may be related to Parkinson's Disease motor symptoms. While the AI assessment is highly confident in its prediction, it is crucial for clinicians to verify these findings through comprehensive evaluations and medical examinations.",
+  "generation_time_seconds": 22.59143614768982,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:45:32"
+}

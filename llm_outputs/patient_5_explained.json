@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_5",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9999979734420776,
+    "confidence": 0.9999979734420776,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts a 100% probability of Parkinson's Disease (PD) in patient_5, indicating significant acoustic changes in their voice.\n\n**Key Drivers**: The top contributing features suggest vocal instability and weakness. Specifically:\n\n1. **Spread2** and **D2** indicate an increase in vocal tremor-like patterns, which can be related to the motor symptoms of PD, such as rigidity and bradykinesia.\n2. **Harmonics-to-Noise Ratio (HNR)** shows a reduced value, indicating increased vocal noise and hoarseness, which is consistent with PD's motor symptoms, particularly tremor.\n\n**Conclusion**: The AI assessment suggests that patient_5's voice biomarkers are indicative of Parkinson's Disease, with features pointing to vocal instability, weakness, and potential motor symptoms. While this prediction has a high confidence level, it is essential to note that this is an AI screening result and not a definitive medical diagnosis. A comprehensive clinical evaluation is necessary for accurate diagnosis and treatment planning.",
+  "generation_time_seconds": 16.33879327774048,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:45:48"
+}

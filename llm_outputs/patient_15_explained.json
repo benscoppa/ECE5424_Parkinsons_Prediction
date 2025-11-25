@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_15",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 1.0,
+    "confidence": 1.0,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI model predicts Parkinson's Disease with 100% confidence, indicating a strong correlation between the patient's voice biomarkers and PD.\n\n**Key Drivers**: The top contributing features suggest irregular vocal fold vibration (PPE), increased vocal noise and hoarseness (HNR), and complex disruptions in voice (MDVP:RAP). These findings are indicative of vocal instability and weakness.\n\n**Conclusion**: The AI assessment suggests that the patient's voice biomarkers are consistent with Parkinson's Disease, particularly regarding motor symptoms such as rigidity and bradykinesia. The reduced HNR and increased entropy indicate a loss of normal vocal fold coordination, which may be related to the motor symptoms observed in PD patients. While the clinical significance of spread1, spread2, and MDVP:RAP is unclear, their SHAP impacts suggest they contribute to the overall prediction. Given the strong feature patterns, this AI assessment appears reliable for further evaluation.\n\nNote: As always, this AI assessment should not be used as a substitute for a comprehensive medical diagnosis or treatment plan.",
+  "generation_time_seconds": 16.016108989715576,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:37:36"
+}

@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_14",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9977403879165649,
+    "confidence": 0.9977403879165649,
+    "threshold": 0.5
+  },
+  "explanation": "**Summary**: The AI assessment predicts a high probability of Parkinson's Disease (PD) with 99.8% confidence.\n\n**Key Drivers**: The top contributing features indicate altered vocal function, suggesting increased rigidity and reduced control. Specifically:\n\n* **D2**: Abnormal values may reflect changes in vocal signal complexity, potentially indicative of PD-related motor symptoms.\n* **spread2**: This feature's abnormal value could be related to the loss of fine motor control and coordination seen in PD patients.\n\n**Conclusion**: The AI analysis suggests that the patient's voice biomarkers are consistent with Parkinson's Disease. The top features indicate reduced vocal range, rigidity, and limited control, which may relate to PD motor symptoms such as bradykinesia (slow movement) and tremors. While this prediction is highly confident, it is essential to note that AI assessments should not replace clinical evaluations. A thorough examination by a healthcare professional is necessary for an accurate diagnosis and treatment plan.\n\nIn summary, the patient's voice biomarkers suggest altered vocal function, potentially indicative of PD-related motor symptoms, with high confidence in the AI assessment.",
+  "generation_time_seconds": 16.620989084243774,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-11-25 11:38:13"
+}
