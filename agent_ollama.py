@@ -1,3 +1,9 @@
+# agent_ollama.py
+# --------------------------------------------
+# Ollama agent for output sumerization
+# Author: Yash Moar, Virginia Tech ECE Dept
+# --------------------------------------------
+
 import json
 import requests
 import glob

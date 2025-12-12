@@ -1,3 +1,9 @@
+# benchmark_agent.py
+# --------------------------------------------
+# Ollama agent benchmarking
+# Author: Yash Moar, Virginia Tech ECE Dept
+# --------------------------------------------
+
 import json
 import glob
 import os

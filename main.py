@@ -1,7 +1,13 @@
 # main.py
 # -------------------------------------------------
-# Complete pipeline: load FNN → SHAP → visualizations → JSON
 # Authors: Dominic Jibin James, Ben Scoppa Virginia Tech ECE Dept
+# -------------------------------------------------
+# Full pipeline:
+#   1) Load data and preprocess
+#   2) Load trained FNN
+#   3) SHAP analysis and JSON
+#   4) Call Ollama agent to generate explanations
+#   5) Run benchmark over Ollama outputs
 # -------------------------------------------------
 
 import warnings
@@ -14,6 +20,8 @@ import torch
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+from agent_ollama import process_patient_files
+from benchmark_agent import run_benchmark
 from fnn_train import ParkinsonFNN
 from shap_utils import compute_shap_values, export_llm_json, make_shap_visualizations
 
@@ -24,7 +32,7 @@ def main():
     print("=" * 80)
 
     # ------------------ DATA LOADING & PREPROCESSING ------------------
-    print("\n[STEP 1/3] Loading and preprocessing data...")
+    print("\n[STEP 1/5] Loading and preprocessing data...")
 
     df = pd.read_csv("parkinsons.csv")
     feature_names = [c for c in df.columns if c not in ["name", "status"]]
@@ -47,7 +55,7 @@ def main():
     y_test_tensor = torch.tensor(y_test, dtype=torch.float32).unsqueeze(1)
 
     # ------------------ LOAD TRAINED FNN ------------------
-    print("\n[STEP 2/3] Loading trained FNN model...")
+    print("\n[STEP 2/5] Loading trained FNN model...")
 
     input_dim = X_train.shape[1]
     model = ParkinsonFNN(input_dim)
@@ -75,7 +83,7 @@ def main():
     print(cm)
 
     # ------------------ SHAP + VISUALIZATIONS + JSON ------------------
-    print("\n[STEP 3/3] SHAP analysis, visualizations, and JSON export...")
+    print("\n[STEP 3/5] SHAP analysis, visualizations, and JSON export...")
 
     shap_values, explainer = compute_shap_values(
         model, X_train_tensor, X_test_tensor, background_size=100
@@ -96,8 +104,16 @@ def main():
         X_test=X_test,
         predictions=predictions,
         feature_names=feature_names,
-        output_dir="llm_inputs",
+        output_dir="llm_input_json",
     )
+
+    # ------------------ Ollama agent ------------------
+    print("\n[STEP 4/5] Running Ollama agent to generate explanations...")
+    process_patient_files()  # reads from llm_input_json/, writes to llm_outputs/
+
+    # ------------------ Benchmark ------------------
+    print("\n[STEP 5/5] Running benchmark on Ollama outputs...")
+    run_benchmark()  # reads llm_outputs/ + llm_input_json/
 
     print("\n" + "=" * 80)
     print("MAIN PIPELINE COMPLETE!")
