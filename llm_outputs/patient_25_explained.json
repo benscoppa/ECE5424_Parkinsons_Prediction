@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_25",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.0077932169660925865,
+    "confidence": 0.9922068119049072,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a healthy individual with a confidence level of 99.2%. This screening result suggests that the patient's voice biomarkers do not indicate Parkinson's Disease (PD) at this time.\n\n**Key Findings**: The top contributing features reveal some interesting patterns in the patient's vocal function. Firstly, the spread1 and spread2 values suggest a decrease in vocal instability/weakness, which is consistent with healthy vocal cord functioning. Additionally, the Pitch Period Entropy (PPE) value indicates irregular vocal fold vibration, which might be related to increased entropy. The Maximum Vocal Frequency (MDVP:Fhi(Hz)) suggests limited vocal control, while the Fundamental Frequency (MDVP:Fo(Hz)) reveals reduced variability, indicating vocal rigidity.\n\n**Reliability**: Based on these feature patterns, I would assess the reliability of this prediction as high. The combination of decreased vocal instability/weakness and irregular vocal fold vibration is not typically seen in PD patients. Additionally, the limited vocal control and vocal rigidity are more indicative of healthy vocal functioning. While it's essential to note that this AI assessment is not a definitive diagnosis, the feature patterns suggest a low likelihood of PD.\n\nIn summary, the patient's voice biomarkers indicate a healthy individual with no apparent signs of Parkinson's Disease motor symptoms (rigidity, bradykinesia, tremor). The reliability of this prediction is high due to the unique combination of features.",
+  "generation_time_seconds": 61.497483015060425,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:37:36"
+}

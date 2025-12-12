@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_22",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.987784206867218,
+    "confidence": 0.987784206867218,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a high probability of Parkinson's Disease (98.8%) in patient_22, indicating altered vocal signal complexity and reduced variability.\n\n**Key Findings**: The top contributing features suggest changes in vocal function that are consistent with Parkinsonian motor symptoms. Specifically:\n\n1. **Reduced RPDE** indicates altered vocal signal complexity, which may reflect the rigidity and bradykinesia characteristic of PD.\n2. **Lower Fundamental Frequency (Fo)** suggests reduced variability, indicating vocal rigidity, which can contribute to speech difficulties in PD patients.\n3. **Limited Maximum Vocal Frequency (Fhi)** implies reduced range and limited vocal control, potentially related to tremors or bradykinesia.\n\n**Reliability**: The high SHAP impact values (>0.05) for RPDE, Fo, and Fhi suggest that these features are strong indicators of PD. The patient's values fall outside the normal ranges for these features, further supporting the prediction. While D2 and spread2 have lower SHAP impacts, their positive contributions to the prediction add confidence in the overall assessment.",
+  "generation_time_seconds": 47.978452920913696,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:34:30"
+}

@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_5",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9999979734420776,
+    "confidence": 0.9999979734420776,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a high probability of Parkinson's Disease (PD) with 100% confidence.\n\n**Key Findings**: The top contributing features indicate significant changes in vocal function, including increased noise and hoarseness (HNR), irregular vocal fold vibration (PPE), and instability/weakness (spread2). These findings suggest compromised motor control, which is consistent with PD's motor symptoms of rigidity, bradykinesia, and tremor.\n\n**Reliability**: The prediction's high confidence stems from the collective impact of multiple features. The SHAP analysis highlights the most influential factors: spread2, D2, HNR, PPE, and spread1. These features collectively contribute to a strong indication of PD, making this assessment reliable based on the patterns observed.\n\nIn summary, the AI assessment suggests that the patient's voice biomarkers are indicative of compromised motor control, consistent with Parkinson's Disease symptoms. The reliability of this prediction is supported by the collective impact of multiple features.",
+  "generation_time_seconds": 16.813599109649658,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:51:15"
+}

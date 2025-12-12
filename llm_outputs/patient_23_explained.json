@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_23",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.2776012420654297,
+    "confidence": 0.7223987579345703,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a healthy individual with 72.2% confidence. This prediction is driven by a combination of acoustic features that suggest vocal rigidity, limited vocal control, and irregular vocal fold vibration.\n\n**Key Findings**: The top contributing features indicate reduced variability in fundamental frequency (MDVP:Fo), suggesting vocal rigidity (-0.1243 SHAP impact). Additionally, the maximum vocal frequency (MDVP:Fhi) is within a normal range but with a decreased range, implying limited vocal control (-0.1191 SHAP impact). The D2 feature has a positive SHAP impact of 0.0869, suggesting an increase in PD probability, although its clinical significance is unclear. The spread2 feature has a negative SHAP impact of -0.0775, also decreasing PD probability.\n\n**Reliability**: The prediction's reliability is moderate due to the mixed signals from the top features. While some features suggest vocal rigidity and limited control, others indicate irregularities that could be indicative of Parkinson's Disease. However, the overall pattern suggests a healthy individual with reduced variability in fundamental frequency, which may not be typical of PD patients. The D2 feature's unclear clinical significance and the spread2 feature's negative impact further support this assessment.",
+  "generation_time_seconds": 54.29843997955322,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:29:34"
+}

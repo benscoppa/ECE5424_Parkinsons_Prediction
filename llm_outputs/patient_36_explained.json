@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_36",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9999501705169678,
+    "confidence": 0.9999501705169678,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI assessment predicts a 100% probability of Parkinson's Disease (PD) in patient_36, indicating significant vocal biomarkers indicative of PD.\n\n**Key Findings**: The top contributing features suggest reduced vocal stability and increased noise. Spread2 indicates an upward trend, implying vocal instability and weakness. Harmonics-to-Noise Ratio (HNR) is significantly lower than normal, reflecting hoarseness and breathiness. D2 shows a moderate increase, suggesting altered vocal signal complexity.\n\n**Reliability**: The prediction's reliability is high due to the consistent pattern of features indicating reduced vocal stability and increased noise. The combination of Spread2, HNR, and D2 suggests a strong correlation with PD motor symptoms, such as rigidity, bradykinesia, and tremor. The RPDE and Shimmer:DDA features, while not strongly contributing to the prediction, do not contradict the overall findings, further supporting the reliability of this assessment.\n\nIn summary, patient_36's voice biomarkers suggest a high likelihood of Parkinson's Disease due to reduced vocal stability, increased noise, and altered signal complexity. This AI-assisted screening result should be considered in conjunction with other diagnostic tools and clinical evaluations.",
+  "generation_time_seconds": 19.595358848571777,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:54:56"
+}

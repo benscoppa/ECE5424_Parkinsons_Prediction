@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_0",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.3004406988620758,
+    "confidence": 0.6995593309402466,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**\nThe AI assessment predicts a healthy individual with 70% confidence. The voice biomarkers suggest altered vocal signal complexity, disrupted vocal control dynamics, and potential vocal instability.\n\n**Key Findings**\n\nThe top contributing features indicate:\n\n1. **RPDE**: Altered recurrence period density entropy reflects changes in vocal signal complexity, which may be indicative of normal vocal function.\n2. **DFA**: Abnormal detrended fluctuation analysis suggests disrupted vocal control dynamics, potentially related to motor symptoms like rigidity and bradykinesia.\n3. **MDVP:RAP**: Low MDVP:RAP values indicate potential vocal instability or weakness, which may be associated with tremor.\n\n**Reliability**\nThe prediction's reliability is moderate (70% confidence) due to the presence of both PD-increasing (DFA) and PD-decreasing features (RPDE, MDVP:RAP). The spread2 feature's clinical interpretation not being available adds uncertainty. However, the overall pattern suggests a healthy individual, supported by the RPDE and MDVP:RAP findings.\n\nAs a Neurologist, I would consider this AI assessment as an \"AI screening result\" rather than a definitive diagnosis. Further evaluation is necessary to confirm or refute these findings in the context of the patient's overall clinical presentation.",
+  "generation_time_seconds": 59.02767896652222,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:41:37"
+}

@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_16",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 1.0,
+    "confidence": 1.0,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI-assessment indicates a high probability (100%) of Parkinson's Disease (PD) diagnosis based on voice biomarkers.\n\n**Key Findings**: The top contributing features suggest vocal instability, irregularities in vocal fold vibration, and increased noise. Specifically:\n\n* **Spread2** and **Spread1** indicate an increase in the variability of vocal pitch, which may reflect neuromuscular instability.\n* **Pitch Period Entropy (PPE)** suggests irregular vocal fold vibration, a common finding in PD patients.\n* **Absolute Jitter (MDVP:Jitter(Abs))** reflects increased neuromuscular instability, potentially contributing to motor symptoms like rigidity and bradykinesia.\n\n**Reliability**: The prediction is highly reliable due to the consistent patterns across multiple features. The combination of vocal instability, irregularities in vocal fold vibration, and increased noise suggests a strong correlation with PD motor symptoms. The reduced Harmonics-to-Noise Ratio (HNR) adds further support for this diagnosis.",
+  "generation_time_seconds": 16.555068969726562,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:52:06"
+}

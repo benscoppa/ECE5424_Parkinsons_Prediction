@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_26",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9996009469032288,
+    "confidence": 0.9996009469032288,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a 100% probability of Parkinson's Disease (PD) in patient_26, indicating significant acoustic changes consistent with PD.\n\n**Key Findings**: The top contributing features reveal increased spread2 and Pitch Period Entropy (PPE), suggesting irregular vocal fold vibration. Spread1 indicates subtle neuromuscular instability, while Absolute Jitter (MDVP:Jitter(Abs)) shows decreased jitter, reflecting vocal stability. Harmonics-to-Noise Ratio (HNR) is reduced, indicating hoarseness.\n\n**Reliability**: The prediction's reliability stems from the combination of features pointing towards PD. Spread2 and PPE indicate irregularities in vocal fold vibration, while spread1 and Absolute Jitter suggest subtle neuromuscular instability. HNR's reduction supports the presence of motor symptoms like rigidity and bradykinesia. These findings collectively support a strong prediction for PD.\n\nIn summary, this AI assessment suggests that patient_26 exhibits acoustic changes consistent with Parkinson's Disease, including irregular vocal fold vibration, subtle neuromuscular instability, and hoarseness. The reliability of this prediction is high due to the convergence of these features, which are indicative of motor symptoms like rigidity, bradykinesia, and tremor.",
+  "generation_time_seconds": 60.51262378692627,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:47:21"
+}

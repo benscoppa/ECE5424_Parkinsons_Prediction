@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_35",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9911258816719055,
+    "confidence": 0.9911258816719055,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI-assessment predicts a 99.1% probability of Parkinson's Disease (PD) based on voice biomarkers. The analysis highlights several key features contributing to this prediction.\n\n**Key Findings**: The top contributors to this prediction are spread1 and spread2, which indicate an increase in PD probability. Spread1 suggests a higher likelihood of PD, while spread2 may reflect the presence of motor symptoms such as rigidity or bradykinesia. Additionally, Absolute Jitter (MDVP:Jitter(Abs)) shows decreased PD probability due to increased neuromuscular instability.\n\nThe other features contributing to this prediction include MDVP:RAP, which suggests an increase in PD probability, and Maximum Vocal Frequency (MDVP:Fhi(Hz)), which indicates a reduced vocal range, potentially reflecting limited vocal control.\n\n**Reliability**: The reliability of this prediction is high due to the presence of multiple features indicating increased PD probability. The spread1 and spread2 values are particularly noteworthy, as they suggest motor symptoms consistent with PD. However, it's essential to note that this AI-assessment is not a definitive diagnosis and should be confirmed through clinical evaluation.\n\nIn summary, this voice biomarker analysis suggests an increased likelihood of Parkinson's Disease due to features indicating vocal instability, limited vocal control, and potential motor symptoms such as rigidity or bradykinesia. While the reliability of this prediction is high, further clinical evaluation is necessary for a definitive diagnosis.",
+  "generation_time_seconds": 55.06804299354553,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:30:29"
+}

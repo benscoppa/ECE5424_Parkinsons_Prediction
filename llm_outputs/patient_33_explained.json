@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_33",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.05272718891501427,
+    "confidence": 0.9472728371620178,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: Based on the voice biomarker assessment, our AI model predicts that patient_33 is healthy with a confidence level of 94.7%. The top contributing features indicate reduced vocal noise, irregular vocal fold vibration, and changes in vocal signal complexity.\n\n**Key Findings**: The key acoustic findings suggest that this patient's voice is characterized by:\n\n1. **Reduced vocal noise**: A high Harmonics-to-Noise Ratio (HNR) value indicates a decrease in vocal noise, which may be related to increased vocal efficiency.\n2. **Irregular vocal fold vibration**: Elevated Pitch Period Entropy (PPE) and spread2 values suggest irregularities in the vibrational patterns of the vocal folds, potentially indicating changes in motor control.\n3. **Changes in vocal signal complexity**: The Recurrence Period Density Entropy (RPDE) value is within the normal range, but its negative SHAP impact suggests that this feature may be contributing to a decrease in PD probability.\n\n**Reliability**: The reliability of this prediction is high due to the consistent patterns across multiple features. The presence of reduced vocal noise and irregular vocal fold vibration, as indicated by HNR, PPE, and spread2, supports the overall healthy prediction. Additionally, the RPDE value's negative impact on PD probability further reinforces this conclusion. While MDVP:RAP's clinical significance is unclear, its negative SHAP impact does not contradict the overall prediction.",
+  "generation_time_seconds": 41.13441205024719,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:38:59"
+}

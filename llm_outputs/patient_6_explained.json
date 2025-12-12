@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_6",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.8759065866470337,
+    "confidence": 0.8759065866470337,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts Parkinson's Disease with a confidence level of 87.6%. This screening result suggests that the patient's voice biomarkers are indicative of neurodegenerative changes consistent with PD.\n\n**Key Findings**: The top contributing features indicate significant alterations in vocal function, which may be related to motor symptoms characteristic of PD. Specifically:\n\n* **Spread1**: A negative value indicates a decrease in the spread of the vocal signal, potentially reflecting neuromuscular instability and weakness.\n* **Absolute Jitter (MDVP:Jitter(Abs))**: The high value suggests increased jitter, which is consistent with neuromuscular instability and may be related to rigidity or bradykinesia.\n* **Pitch Period Entropy (PPE)**: The elevated entropy indicates irregular vocal fold vibration, potentially linked to tremors.\n\n**Reliability**: The prediction's reliability is moderate due to the presence of both positive and negative SHAP impacts. While features like Absolute Jitter and PPE contribute positively to the PD prediction, RPDE has a negative impact. This mixed pattern suggests that the patient's voice biomarkers may not be entirely consistent with PD, but still warrant further evaluation.\n\nIn summary, this AI assessment highlights potential vocal function changes that may be related to motor symptoms characteristic of Parkinson's Disease. However, the reliability of this prediction is moderate due to conflicting feature patterns, emphasizing the need for further clinical evaluation and confirmation.",
+  "generation_time_seconds": 63.16311192512512,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:33:42"
+}

@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_19",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.02451390027999878,
+    "confidence": 0.9754860997200012,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a healthy individual with 97.5% confidence.\n\n**Key Findings**: The top contributing features indicate irregular vocal fold vibration, increased vocal noise, and hoarseness. Specifically, Pitch Period Entropy (PPE) suggests an increase in entropy, which may be related to irregular vocal fold vibration. Harmonics-to-Noise Ratio (HNR) is reduced, indicating increased vocal noise and hoarseness.\n\n**Reliability**: The prediction is reliable due to the consistent patterns across multiple features. The combination of PPE, HNR, and MDVP:RAP suggests a stable and controlled vocal function, which is not typically seen in individuals with Parkinson's Disease (PD). The presence of spread1 and Jitter:DDP values outside normal ranges further supports this prediction.\n\nIn terms of motor symptoms, the AI assessment does not directly relate to rigidity, bradykinesia, or tremor. However, the findings may indirectly suggest a healthy vocal system, which is often preserved in early stages of PD. As the disease progresses, individuals with PD may exhibit changes in their voice, such as softness, slowness, or tremors, but these features are not evident in this assessment.\n\nIn conclusion, the AI-assisted screening result suggests a healthy individual based on the acoustic biomarkers analyzed. The findings indicate a stable and controlled vocal function, which is consistent with the prediction of a healthy individual.",
+  "generation_time_seconds": 42.09329795837402,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:27:47"
+}

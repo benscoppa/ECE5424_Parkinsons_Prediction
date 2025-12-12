@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_10",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 1.0,
+    "confidence": 1.0,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI assessment predicts a 100% probability of Parkinson's Disease (PD) in patient_10, indicating significant abnormalities in vocal function.\n\n**Key Findings**: The top contributing features suggest irregularities in vocal fold vibration, amplitude perturbation, and disrupted vocal control dynamics. Specifically:\n\n* Pitch Period Entropy (PPE) indicates increased entropy, implying irregular vocal fold vibration.\n* Shimmer (MDVP:Shimmer) shows elevated values, indicating amplitude perturbations and weak voice.\n* Detrended Fluctuation Analysis (DFA) suggests abnormal dynamics in vocal control.\n\nThese findings collectively imply a compromised ability to regulate vocal motor function, which is consistent with the motor symptoms characteristic of PD, such as rigidity, bradykinesia, and tremor.\n\n**Reliability**: The high confidence score (100.0%) and the presence of multiple features contributing to the prediction suggest that this AI assessment is reliable based on the feature patterns observed in patient_10's voice biomarkers.",
+  "generation_time_seconds": 59.41375494003296,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:49:01"
+}

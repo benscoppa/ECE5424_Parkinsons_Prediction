@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_13",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9910436868667603,
+    "confidence": 0.9910436868667603,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI assessment predicts a 99.1% probability of Parkinson's Disease (PD) based on voice biomarkers. The analysis highlights altered vocal signal complexity, reduced variability in fundamental frequency, increased neuromuscular instability, disrupted vocal control dynamics, and limited vocal range.\n\n**Key Findings**: The top contributing features indicate significant changes in vocal function. Reduced variability in Fundamental Frequency (MDVP:Fo(Hz)) suggests vocal rigidity, while Absolute Jitter (MDVP:Jitter(Abs)) reflects neuromuscular instability. Recurrence Period Density Entropy (RPDE) and Detrended Fluctuation Analysis (DFA) suggest disrupted vocal control dynamics. Maximum Vocal Frequency (MDVP:Fhi(Hz)) indicates limited vocal range.\n\n**Reliability**: The high confidence level (99.1%) is supported by the consistent patterns across multiple features, including RPDE, Fundamental Frequency, Absolute Jitter, DFA, and Maximum Vocal Frequency. These findings collectively suggest a strong likelihood of PD, particularly given the presence of rigidity, instability, and disrupted control dynamics.",
+  "generation_time_seconds": 34.77964401245117,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:35:59"
+}

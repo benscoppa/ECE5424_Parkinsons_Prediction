@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_2",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9999902248382568,
+    "confidence": 0.9999902248382568,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**\nThe AI assessment predicts a high probability of Parkinson's Disease (PD) with 100% confidence. The top contributing features suggest vocal instability, weakness, and disrupted control dynamics.\n\n**Key Findings**\nThe key drivers of this prediction are:\n\n1. **Spread2**: This feature indicates an irregular pattern in the patient's voice, which may be related to motor symptoms such as rigidity and bradykinesia.\n2. **Pitch Period Entropy (PPE)**: The increased entropy suggests irregular vocal fold vibration, potentially contributing to tremors or other motor disturbances.\n3. **Spread1**: This feature, along with Spread2, implies a complex pattern in the patient's voice, which may be indicative of disrupted motor control.\n4. **Shimmer in Decibels (MDVP:Shimmer(dB))**: The increased amplitude variation suggests vocal weakness, potentially related to bradykinesia or rigidity.\n\n**Reliability**\nThe reliability of this prediction is high due to the consistent patterns across multiple features. The combination of Spread2, PPE, and MDVP:Shimmer(dB) indicates a strong likelihood of PD, while DFA supports the notion of disrupted vocal control dynamics. The overall feature pattern suggests a robust prediction, warranting further clinical evaluation and confirmation.\n\nIn summary, this AI assessment suggests that the patient's voice biomarkers are indicative of Parkinson's Disease, with features pointing to vocal instability, weakness, and disrupted motor control dynamics. While not a definitive diagnosis, these findings warrant further investigation and consideration in the context of the patient's overall presentation.",
+  "generation_time_seconds": 40.92822766304016,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:46:21"
+}

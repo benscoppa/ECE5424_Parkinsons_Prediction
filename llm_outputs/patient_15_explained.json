@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_15",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 1.0,
+    "confidence": 1.0,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a 100% probability of Parkinson's Disease (PD) in patient_15, indicating significant acoustic abnormalities.\n\n**Key Findings**: The top contributing features suggest irregular vocal fold vibration (PPE), increased vocal noise and hoarseness (HNR), and complex disruptions in voice production (MDVP:RAP). Additionally, the spread1 and spread2 values imply altered spectral characteristics of the voice.\n\n**Reliability**: The high SHAP impact values (>0.04) for PPE, HNR, MDVP:RAP, spread1, and spread2 indicate that these features collectively contribute to a strong prediction of PD. The absence of normal ranges for some features (spread1, spread2, MDVP:RAP) may limit the reliability assessment; however, the overall pattern of acoustic abnormalities suggests a high likelihood of PD.\n\nIn summary, this AI-assisted screening result indicates significant vocal instability and weakness, potentially reflecting motor symptoms such as rigidity, bradykinesia, or tremor in patient_15. While the prediction is strong, further clinical evaluation is necessary to confirm the diagnosis.",
+  "generation_time_seconds": 34.62431311607361,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:31:03"
+}

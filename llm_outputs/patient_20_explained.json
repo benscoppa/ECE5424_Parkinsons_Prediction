@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_20",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.0009306209976784885,
+    "confidence": 0.9990693926811218,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a healthy individual with 99.9% confidence.\n\n**Key Findings**: The top contributing features indicate vocal instability and reduced variability, which are not typical characteristics of Parkinson's Disease (PD). Specifically:\n\n* **Spread2** and **Spread1** values are lower than normal, suggesting a more consistent pitch period distribution, which is unusual in PD.\n* **Pitch Period Entropy (PPE)** is decreased, indicating irregular vocal fold vibration, but this is not a typical finding in PD.\n* The **Fundamental Frequency (Fo)** and **Maximum Vocal Frequency (Fhi)** are within normal ranges, suggesting no significant vocal rigidity or limited control.\n\n**Reliability**: The prediction's high confidence level is supported by the consistent patterns across multiple features. The low values of Spread2 and Spread1, combined with decreased PPE, suggest a stable and controlled vocal function, which is not typical in PD. These findings are more indicative of a healthy individual than someone with Parkinson's Disease.",
+  "generation_time_seconds": 56.25051212310791,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:53:57"
+}

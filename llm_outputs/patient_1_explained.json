@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_1",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9941965341567993,
+    "confidence": 0.9941965341567993,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI-assessment predicts a 99.4% probability of Parkinson's Disease (PD) based on voice biomarkers. The analysis highlights irregularities in vocal fold vibration, disrupted vocal control dynamics, and reduced vocal range.\n\n**Key Findings**: The top contributing features indicate significant changes in vocal function. Pitch Period Entropy (PPE) suggests increased entropy, indicating irregular vocal fold vibration. Spread1 and spread2 values are elevated, suggesting abnormalities in the timing and coordination of vocal fold movements. Detrended Fluctuation Analysis (DFA) reveals disrupted vocal control dynamics. Maximum Vocal Frequency (MDVP:Fhi(Hz)) indicates a reduced range, suggesting limited vocal control.\n\n**Reliability**: The high SHAP impact values for PPE, spread1, and DFA suggest that these features are strong indicators of PD. The presence of multiple features contributing to the prediction increases confidence in this AI-assessment. While the clinical significance of spread1 and spread2 is not explicitly stated, their elevated values imply abnormalities in vocal function, which aligns with the overall pattern of findings. The reduced range in Maximum Vocal Frequency (MDVP:Fhi(Hz)) further supports the PD diagnosis.\n\nIn terms of motor symptoms, these voice biomarkers may be related to rigidity (irregular vocal fold vibration), bradykinesia (disrupted vocal control dynamics), and tremor (reduced vocal range). However, this AI-assessment is not a medical diagnosis; rather, it provides an AI-screening result that should be confirmed through clinical evaluation.",
+  "generation_time_seconds": 42.70535683631897,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:38:18"
+}

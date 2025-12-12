@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_12",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9933445453643799,
+    "confidence": 0.9933445453643799,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI assessment predicts a 99.3% probability of Parkinson's Disease (PD) in patient_12, suggesting significant vocal biomarker abnormalities.\n\n**Key Findings**: The top contributing features indicate reduced vocal control, irregular vocal fold vibration, and instability/weakness. Specifically:\n\n* Reduced Maximum Vocal Frequency (MDVP:Fhi(Hz)) suggests limited vocal control, which may be related to rigidity or bradykinesia in PD.\n* Increased Pitch Period Entropy (PPE) indicates irregular vocal fold vibration, potentially linked to tremors or motor fluctuations in PD.\n* High values for spread2 and D2 suggest instability/weakness in vocal function, which may be associated with bradykinesia or rigidity.\n\n**Reliability**: The high SHAP impact values (>0.08) for the top features (spread2, PPE, D2, and spread1) indicate strong relationships between these biomarkers and PD prediction. The consistent patterns across multiple features support the reliability of this AI assessment, suggesting that patient_12's vocal biomarkers are indicative of Parkinson's Disease.",
+  "generation_time_seconds": 16.394248962402344,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:42:52"
+}

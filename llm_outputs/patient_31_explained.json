@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_31",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.031433288007974625,
+    "confidence": 0.9685667157173157,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a healthy individual with 96.9% confidence. This prediction is driven by several acoustic features that suggest normal vocal function.\n\n**Key Findings**: The top contributing features indicate reduced variability in fundamental frequency (MDVP:fo(Hz)), increased entropy in pitch period entropy (PPE), and decreased spread in both spread1 and spread2. These findings suggest a rigid and regular vocal fold vibration, which is consistent with healthy vocal function.\n\nThe MDVP:fo(Hz) value of 1.3302 indicates reduced variability, implying vocal rigidity. The PPE value of -1.1685 suggests irregular vocal fold vibration, which is not typical in Parkinson's disease. The spread values (-1.2471 and -1.9175) indicate decreased spread, suggesting a more consistent and controlled vocal output.\n\n**Reliability**: The prediction reliability is high due to the presence of multiple features that collectively support a healthy outcome. The MDVP:fo(Hz) and PPE features provide complementary information about vocal function, while the spread values add further confirmation. The RPDE feature, which tends to increase PD probability, has a relatively small SHAP impact compared to the other features, suggesting it is not driving the prediction. Overall, this combination of features supports a reliable prediction of a healthy individual.",
+  "generation_time_seconds": 36.44002413749695,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:44:25"
+}

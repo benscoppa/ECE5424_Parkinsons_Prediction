@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_8",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.009177332744002342,
+    "confidence": 0.9908226728439331,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a healthy individual with 99.1% confidence.\n\n**Key Findings**: The top contributing features indicate vocal rigidity, neuromuscular instability, and irregular vocal fold vibration. Specifically:\n\n* Reduced variability in Fundamental Frequency (MDVP:Fo(Hz)) suggests vocal rigidity, which is consistent with PD motor symptoms of bradykinesia (slow movement).\n* Increased Absolute Jitter (MDVP:Jitter(Abs)) reflects neuromuscular instability, potentially related to tremor.\n* Pitch Period Entropy (PPE) and spread1/2 features suggest irregular vocal fold vibration, which may be indicative of early PD motor symptoms.\n\n**Reliability**: The prediction is highly reliable due to the consistent patterns across multiple features. The combination of reduced variability in Fundamental Frequency, increased Absolute Jitter, and irregular vocal fold vibration strongly suggests a healthy individual.",
+  "generation_time_seconds": 54.00717377662659,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:53:00"
+}

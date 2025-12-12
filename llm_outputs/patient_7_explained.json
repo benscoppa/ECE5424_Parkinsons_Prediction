@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_7",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.914674699306488,
+    "confidence": 0.914674699306488,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a high probability of Parkinson's Disease (PD) with 91.5% confidence.\n\n**Key Findings**: The top contributing features indicate significant changes in vocal function, suggesting motor symptoms characteristic of PD. Specifically:\n\n* Reduced variability in Fundamental Frequency (Fo) indicates vocal rigidity, consistent with PD motor symptoms.\n* Abnormal D2 values suggest altered neuromuscular control, which may contribute to bradykinesia and tremor.\n* Increased Absolute Jitter (Abs) reflects neuromuscular instability, potentially related to rigidity and bradykinesia.\n\n**Reliability**: The prediction is reliable due to the consistent patterns across multiple features. The combination of reduced Fo variability, abnormal D2 values, increased Abs jitter, and altered RPDE density entropy suggests a strong correlation with PD motor symptoms. While individual features may not be diagnostic, their collective impact supports the AI's high-confidence prediction.\n\nIn summary, this patient's voice biomarkers suggest significant changes in vocal function, consistent with Parkinson's Disease motor symptoms. The reliability of this prediction is supported by the consistent patterns across multiple features.",
+  "generation_time_seconds": 52.13805389404297,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:28:39"
+}

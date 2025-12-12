@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_4",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.017773529514670372,
+    "confidence": 0.9822264909744263,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a healthy individual with 98.2% confidence.\n\n**Key Findings**: The top contributing features indicate vocal instability and rigidity, which are not typical of Parkinson's Disease (PD). Specifically:\n\n* **Spread2**, **Spread1**, and **Pitch Period Entropy (PPE)** suggest irregularities in vocal fold vibration, potentially due to laryngeal or respiratory factors. These findings are more consistent with a healthy individual than someone with PD.\n* **Recurrence Period Density Entropy (RPDE)** indicates altered complexity in the vocal signal, which may be related to changes in vocal tract dynamics rather than PD-specific motor symptoms.\n\n**Reliability**: The prediction is reliable due to the presence of features that are not typically associated with PD. The combination of low RPDE and high PPE values suggests a more complex vocal signal, which is less likely to be seen in individuals with PD. Additionally, the reduced variability in Fundamental Frequency (MDVP:Fo(Hz)) indicates vocal rigidity, which is an atypical finding for PD. Overall, these features collectively support the prediction of a healthy individual.",
+  "generation_time_seconds": 39.378265142440796,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:54:36"
+}

@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_32",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9679248929023743,
+    "confidence": 0.9679248929023743,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**\nThis AI assessment suggests a high probability of Parkinson's Disease (PD) with 96.8% confidence. The patient's voice biomarkers indicate reduced vocal control, increased noise, and irregular vibration.\n\n**Key Findings**\n\nThe top contributing features suggest:\n\n1. **Reduced Vocal Range**: Maximum Vocal Frequency is below the normal range, indicating limited vocal control, which may be related to rigidity in PD.\n2. **Disrupted Vocal Control Dynamics**: Detrended Fluctuation Analysis (DFA) and Pitch Period Entropy (PPE) indicate abnormal patterns, suggesting irregularities in vocal fold vibration and movement, potentially linked to bradykinesia and tremor in PD.\n3. **Increased Noise and Hoarseness**: Harmonics-to-Noise Ratio (HNR) is below the normal range, indicating increased vocal noise and hoarseness, which may be related to motor symptoms like rigidity and bradykinesia.\n\n**Reliability**\nThe SHAP analysis highlights a consistent pattern of features contributing to the PD prediction. The presence of multiple abnormal findings in different aspects of voice production (vocal control, dynamics, and noise) increases the reliability of this assessment. However, it is essential to note that this AI screening result should be confirmed with additional clinical evaluations and diagnostic tests before making a definitive diagnosis.",
+  "generation_time_seconds": 58.4718759059906,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:39:58"
+}

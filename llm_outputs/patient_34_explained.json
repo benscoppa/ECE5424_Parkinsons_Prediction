@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_34",
+  "original_prediction": {
+    "class": "Healthy",
+    "probability": 0.0004706487525254488,
+    "confidence": 0.9995293617248535,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI assessment predicts a healthy individual with 100% confidence.\n\n**Key Findings**: The top contributing features indicate vocal stability and rigidity, which are characteristic of a healthy voice. Specifically, the reduced spread2 and spread1 values suggest consistent vocal fold vibration, while the normal Fundamental Frequency (MDVP:Fo(Hz)) value indicates regular pitch production. Additionally, the low Pitch Period Entropy (PPE) and Detrended Fluctuation Analysis (DFA) values indicate a lack of irregularities in vocal fold vibration and control dynamics.\n\n**Reliability**: The reliability of this prediction is high due to the consistent patterns across multiple features. The reduced variability in Fundamental Frequency, combined with low PPE and DFA values, suggests a stable and controlled vocal function. This pattern is more typical of a healthy individual than one with Parkinson's Disease, which often presents with vocal instability, rigidity, and irregularities.",
+  "generation_time_seconds": 28.84521222114563,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:32:39"
+}

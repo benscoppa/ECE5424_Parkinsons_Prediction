@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_27",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9978324770927429,
+    "confidence": 0.9978324770927429,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a high probability of Parkinson's Disease (PD) in patient_27 with a confidence level of 99.8%. This screening result suggests that the patient's voice biomarkers are indicative of PD, warranting further evaluation.\n\n**Key Findings**: The top contributing features to this prediction include spread2, D2, Fundamental Frequency, and spread1. These features indicate vocal instability and rigidity, characterized by:\n\n* **Vocal instability**: Spread2 and spread1 values suggest an increase in vocal variability, which may be related to motor symptoms such as bradykinesia (slow movement) or tremors.\n* **Rigidity**: The reduced variability in Fundamental Frequency indicates vocal rigidity, consistent with PD's characteristic motor symptoms.\n\n**Reliability**: The reliability of this prediction is high due to the presence of multiple features contributing to the PD probability. The SHAP analysis highlights the importance of spread2 and spread1, which are not typically seen in healthy individuals. The combination of these features, along with the other top contributors (D2 and Fundamental Frequency), strengthens the prediction's reliability.\n\nIn summary, this AI assessment suggests that patient_27's voice biomarkers are indicative of Parkinson's Disease, characterized by vocal instability and rigidity. These findings may be related to motor symptoms such as bradykinesia or tremors. The high confidence level and multiple contributing features support the reliability of this prediction.",
+  "generation_time_seconds": 54.00925421714783,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:45:40"
+}

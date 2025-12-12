@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_37",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9137290120124817,
+    "confidence": 0.9137290120124817,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**\nThe AI assessment predicts a 91.4% probability of Parkinson's Disease (PD) in patient_37, indicating a high confidence level.\n\n**Key Findings**\n\nThe top contributing features suggest that this patient's voice biomarkers are indicative of PD. The **Pitch Period Entropy (PPE)** is higher than normal, indicating irregular vocal fold vibration, which may be related to the motor symptoms of rigidity and bradykinesia. The **spread2** and **spread1** values are also elevated, suggesting an increased spread or variability in the timing of vocal cord vibrations, potentially reflecting neuromuscular instability.\n\nIn contrast, the **Maximum Vocal Frequency (MDVP:Fhi(Hz))** is lower than normal, indicating reduced vocal control, which may be related to tremor symptoms. Additionally, the **Absolute Jitter (MDVP:Jitter(Abs))** value is higher than normal, reflecting neuromuscular instability and potentially contributing to the motor symptoms of PD.\n\n**Reliability**\nThe reliability of this prediction is high due to the consistent pattern of features indicating vocal function abnormalities. The combination of increased PPE, spread2, and spread1 values, along with reduced MDVP:Fhi(Hz) and higher Absolute Jitter, suggests a strong correlation between these voice biomarkers and PD motor symptoms.",
+  "generation_time_seconds": 61.03688287734985,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:50:02"
+}

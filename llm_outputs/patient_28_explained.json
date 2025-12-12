@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_28",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9997430443763733,
+    "confidence": 0.9997430443763733,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI assessment predicts a high probability of Parkinson's Disease (PD) with 100% confidence. The voice biomarkers suggest a complex pattern of vocal instability, reduced range, and altered signal complexity.\n\n**Key Findings**:\n\nThe top contributing features indicate significant changes in vocal function. **Spread1**, which measures the distribution of vocal frequency, shows an increased value, suggesting an irregularity in vocal fold vibration (\u2191 increases PD probability). **Maximum Vocal Frequency** is reduced, indicating limited vocal control and potential motor symptoms like rigidity or bradykinesia. **Pitch Period Entropy** is elevated, reflecting irregular vocal fold vibration, which may be related to tremor-like movements.\n\nThe features that contribute less to the prediction, but still warrant attention, are **Absolute Jitter**, which suggests neuromuscular instability (\u2193 decreases PD probability), and **Recurrence Period Density Entropy** (RPDE), which indicates changes in vocal signal complexity. These findings collectively suggest a complex interplay between motor and cognitive systems.\n\n**Reliability**: The high confidence prediction is supported by the presence of multiple features indicating vocal instability, reduced range, and altered signal complexity. The spread1 feature, in particular, suggests an irregularity in vocal fold vibration, which is consistent with PD-related motor symptoms. While individual features may have varying levels of impact, their collective pattern reinforces the AI's prediction.",
+  "generation_time_seconds": 58.068084955215454,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:42:35"
+}

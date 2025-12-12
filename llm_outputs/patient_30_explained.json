@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_30",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9989643096923828,
+    "confidence": 0.9989643096923828,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**\nThe AI assessment predicts a high probability of Parkinson's Disease (PD) with 99.9% confidence. The voice biomarkers suggest reduced vocal control, motor impairment, and rigidity.\n\n**Key Findings**\n\nThe top contributing features indicate:\n\n1. **Reduced Vocal Range**: Maximum Vocal Frequency (MDVP:Fhi(Hz)) is below the normal range, suggesting limited vocal control. This may be related to PD's characteristic bradykinesia (slow movement).\n2. **Narrowed Frequency Range**: Minimum Vocal Frequency (MDVP:Flo(Hz)) is lower than expected, indicating motor impairment and rigidity.\n3. **Reduced Variability in Fundamental Frequency**: MDVP:Fo(Hz) shows reduced variability, suggesting vocal rigidity.\n\nThese findings collectively suggest that the patient's voice is characterized by limited control, stiffness, and reduced movement, which are all consistent with PD symptoms.\n\n**Reliability**\nThe prediction is highly reliable due to the strong contributions from multiple features. The spread2 and D2 values indicate a high probability of PD, while the MDVP:Fhi(Hz), MDVP:Flo(Hz), and MDVP:Fo(Hz) features provide additional support for this diagnosis. The consistent patterns across these features increase the confidence in the AI assessment's prediction.",
+  "generation_time_seconds": 40.5240318775177,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:48:02"
+}

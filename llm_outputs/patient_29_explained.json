@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_29",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9967808723449707,
+    "confidence": 0.9967808723449707,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: This AI assessment indicates a high probability of Parkinson's Disease (PD) with a confidence level of 99.7%. The voice biomarkers suggest significant changes in vocal function, which may be related to motor symptoms characteristic of PD.\n\n**Key Findings**: The top contributing features include reduced Harmonics-to-Noise Ratio (HNR), increased spread1, and narrowed Minimum Vocal Frequency (MDVP:Flo(Hz)). These findings indicate hoarseness, vocal instability, and motor impairment in the patient's voice. Additionally, Pitch Period Entropy (PPE) suggests irregular vocal fold vibration, while Detrended Fluctuation Analysis (DFA) indicates disrupted vocal control dynamics.\n\n**Reliability**: The reliability of this prediction is high due to the consistent patterns across multiple features. The combination of reduced HNR, increased spread1, and narrowed MDVP:Flo(Hz) strongly suggests motor impairment, which is a hallmark symptom of PD. The PPE and DFA findings further support this conclusion by indicating irregular vocal fold vibration and disrupted vocal control dynamics, respectively. Overall, the AI assessment provides strong evidence for a diagnosis of Parkinson's Disease.",
+  "generation_time_seconds": 35.41775107383728,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:36:34"
+}

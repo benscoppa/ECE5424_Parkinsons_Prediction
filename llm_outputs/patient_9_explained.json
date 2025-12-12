@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_9",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9994632601737976,
+    "confidence": 0.9994632601737976,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a 99.9% probability of Parkinson's Disease (PD) in patient_9, indicating significant vocal biomarker abnormalities.\n\n**Key Findings**: The top contributing features suggest abnormal vocal function dynamics. Specifically:\n\n* **DFA** and **PPE** indicate disrupted vocal control and irregular vocal fold vibration, respectively.\n* **Spread2** and **D2** imply increased vocal instability and weakness.\n\nThese findings collectively point to a compromised ability to regulate vocal motor control, which is consistent with PD's characteristic motor symptoms of rigidity, bradykinesia, and tremor.\n\n**Reliability**: The prediction reliability is high due to the presence of multiple features contributing to the PD probability. The abnormal DFA and PPE values, in particular, strongly suggest disrupted vocal dynamics, which are often seen in PD patients. The spread2 and D2 values also support this conclusion. While the clinical significance of spread1 is unclear, its positive SHAP impact reinforces the overall prediction.",
+  "generation_time_seconds": 16.486799955368042,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:51:31"
+}

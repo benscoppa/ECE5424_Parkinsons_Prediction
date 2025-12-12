@@ -1,0 +1,13 @@
+{
+  "patient_id": "patient_14",
+  "original_prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9977403879165649,
+    "confidence": 0.9977403879165649,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary**: The AI assessment predicts a high probability of Parkinson's Disease (PD) with 99.8% confidence.\n\n**Key Findings**: The top contributing features indicate vocal instability, rigidity, and limited control. Specifically:\n\n* **D2** suggests an increase in PD probability due to altered vocal signal processing.\n* **Spread2** also contributes to the prediction, implying a disruption in vocal signal complexity.\n* **RPDE** reflects changes in vocal signal complexity, which may be related to motor symptoms like bradykinesia and rigidity.\n* **Fundamental Frequency** shows reduced variability, indicating vocal rigidity, while **Maximum Vocal Frequency** suggests limited vocal control.\n\nThese findings collectively suggest that the patient's voice biomarkers are indicative of PD-related motor symptoms, such as rigidity, bradykinesia, and potentially tremor.\n\n**Reliability**: The prediction is highly reliable due to the consistent patterns across multiple features. The SHAP analysis highlights the significant contributions of D2, Spread2, RPDE, Fundamental Frequency, and Maximum Vocal Frequency, all pointing towards a high likelihood of PD.",
+  "generation_time_seconds": 47.064528942108154,
+  "model_used": "parkinsons-agent",
+  "timestamp": "2025-12-12 16:32:10"
+}
