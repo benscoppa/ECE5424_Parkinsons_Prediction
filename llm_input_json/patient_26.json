@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "patient_id": "patient_26",
+    "model_version": "FNN_v1.0",
+    "analysis_date": "2025-11-20T00:54:33.123356"
+  },
+  "prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9996009469032288,
+    "confidence": 0.9996009469032288,
+    "threshold": 0.5
+  },
+  "shap_analysis": {
+    "total_shap_contribution": 0.2694304028818806,
+    "mean_abs_shap": 0.01837247707139382,
+    "features_increasing_pd": 12,
+    "features_decreasing_pd": 10
+  },
+  "top_contributing_features": [
+    {
+      "rank": 1,
+      "feature_name": "spread2",
+      "feature_value": 1.217173592720404,
+      "shap_value": 0.08630087971687317,
+      "contribution": "increases",
+      "clinical_name": "spread2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 2,
+      "feature_name": "PPE",
+      "feature_value": 0.27833940917860167,
+      "shap_value": 0.06671012938022614,
+      "contribution": "increases",
+      "clinical_name": "Pitch Period Entropy",
+      "normal_range": "0.1-0.3",
+      "pd_indication": "Increased entropy indicates irregular vocal fold vibration"
+    },
+    {
+      "rank": 3,
+      "feature_name": "spread1",
+      "feature_value": 0.17079018430925072,
+      "shap_value": 0.04833782836794853,
+      "contribution": "increases",
+      "clinical_name": "spread1",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 4,
+      "feature_name": "MDVP:Jitter(Abs)",
+      "feature_value": 0.4618447407770164,
+      "shap_value": -0.038007065653800964,
+      "contribution": "decreases",
+      "clinical_name": "Absolute Jitter",
+      "normal_range": "<83 microseconds",
+      "pd_indication": "Increased jitter reflects neuromuscular instability"
+    },
+    {
+      "rank": 5,
+      "feature_name": "HNR",
+      "feature_value": -0.01675750559020276,
+      "shap_value": 0.028881730511784554,
+      "contribution": "increases",
+      "clinical_name": "Harmonics-to-Noise Ratio",
+      "normal_range": ">13 dB",
+      "pd_indication": "Reduced HNR indicates increased vocal noise and hoarseness"
+    }
+  ],
+  "all_feature_values": {
+    "MDVP:Fo(Hz)": -1.416987803301805,
+    "MDVP:Fhi(Hz)": -0.7126813908532846,
+    "MDVP:Flo(Hz)": -0.5660173679950786,
+    "MDVP:Jitter(%)": -0.1469205093090312,
+    "MDVP:Jitter(Abs)": 0.4618447407770164,
+    "MDVP:RAP": -0.12715897034549462,
+    "MDVP:PPQ": -0.04591710602606513,
+    "Jitter:DDP": -0.12611345003873267,
+    "MDVP:Shimmer": -0.46676340599552724,
+    "MDVP:Shimmer(dB)": -0.469455232296676,
+    "Shimmer:APQ3": -0.48722305315763537,
+    "Shimmer:APQ5": -0.4259423254049672,
+    "MDVP:APQ": -0.40888565760981743,
+    "Shimmer:DDA": -0.4875631152548735,
+    "NHR": -0.35091627963044497,
+    "HNR": -0.01675750559020276,
+    "RPDE": 1.128677366128087,
+    "DFA": 1.0053301788372158,
+    "spread1": 0.17079018430925072,
+    "spread2": 1.217173592720404,
+    "D2": -0.15534982428950853,
+    "PPE": 0.27833940917860167
+  },
+  "all_shap_values": {
+    "MDVP:Fo(Hz)": -0.009324162267148495,
+    "MDVP:Fhi(Hz)": 0.024331962689757347,
+    "MDVP:Flo(Hz)": 0.014924982562661171,
+    "MDVP:Jitter(%)": -0.00671621086075902,
+    "MDVP:Jitter(Abs)": -0.038007065653800964,
+    "MDVP:RAP": 0.016431899741292,
+    "MDVP:PPQ": -0.007609245367348194,
+    "Jitter:DDP": 0.011336625553667545,
+    "MDVP:Shimmer": -0.0013488540425896645,
+    "MDVP:Shimmer(dB)": -9.921323908201884e-06,
+    "Shimmer:APQ3": -0.0021613172721117735,
+    "Shimmer:APQ5": -0.000404042104491964,
+    "MDVP:APQ": 0.001917524728924036,
+    "Shimmer:DDA": -0.000909220427274704,
+    "NHR": 9.829744521994144e-05,
+    "HNR": 0.028881730511784554,
+    "RPDE": -0.0008920070249587297,
+    "DFA": 0.027779527008533478,
+    "spread1": 0.04833782836794853,
+    "spread2": 0.08630087971687317,
+    "D2": 0.009761061519384384,
+    "PPE": 0.06671012938022614
+  },
+  "clinical_prompt": "Analyze the following Parkinson's Disease voice biomarker assessment:\n\nPATIENT ID: patient_26\nPREDICTION: Parkinson's Disease\nCONFIDENCE: 100.0%\n\nTOP CONTRIBUTING FEATURES:\n\n1. spread2 (spread2)\n   Patient Value: 1.2172\n   Normal Range: Not specified\n   SHAP Impact: 0.0863 (\u2191 increases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n2. Pitch Period Entropy (PPE)\n   Patient Value: 0.2783\n   Normal Range: 0.1-0.3\n   SHAP Impact: 0.0667 (\u2191 increases PD probability)\n   Clinical Significance: Increased entropy indicates irregular vocal fold vibration\n\n3. spread1 (spread1)\n   Patient Value: 0.1708\n   Normal Range: Not specified\n   SHAP Impact: 0.0483 (\u2191 increases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n4. Absolute Jitter (MDVP:Jitter(Abs))\n   Patient Value: 0.4618\n   Normal Range: <83 microseconds\n   SHAP Impact: -0.0380 (\u2193 decreases PD probability)\n   Clinical Significance: Increased jitter reflects neuromuscular instability\n\n5. Harmonics-to-Noise Ratio (HNR)\n   Patient Value: -0.0168\n   Normal Range: >13 dB\n   SHAP Impact: 0.0289 (\u2191 increases PD probability)\n   Clinical Significance: Reduced HNR indicates increased vocal noise and hoarseness\n\nTASK: Based on the SHAP analysis above, provide a clinical interpretation that:\n1. Summarizes the key acoustic findings in 2-3 sentences\n2. Explains what the top features indicate about vocal function\n3. Relates findings to PD motor symptoms (rigidity, bradykinesia, tremor)\n4. Assesses the reliability of this prediction based on feature patterns\n\nKeep the explanation concise and accessible to healthcare providers.\n"
+}
