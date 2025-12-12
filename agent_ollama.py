@@ -14,38 +14,77 @@ OUTPUT_DIR = "llm_outputs"
 def generate_explanation(patient_data, model=MODEL_NAME):
     """
     Sends the clinical prompt to Ollama and gets the explanation.
+    Implements a Critic-Refiner Agentic Workflow.
     """
     prompt = patient_data.get("clinical_prompt", "")
     if not prompt:
-        return "Error: No clinical prompt found in data."
+        return "Error: No clinical prompt found in data.", 0
 
-    system_prompt = (
-        "You are a helpful medical assistant explaining AI model results to a clinician. "
+    # Extract top feature names for verification
+    top_features = [f['feature_name'].lower() for f in patient_data.get('top_contributing_features', [])]
+    
+    # --- PROMPTS ---
+    PROMPT_GENERATOR = (
+        "You are a Neurologist analyzing voice biomarkers for Parkinson's Disease. "
         "Use plain English. Be concise but thorough. "
-        "Base your explanation STRICTLY on the provided SHAP analysis."
+        "Base your explanation STRICTLY on the provided SHAP analysis. "
+        "Structure your response with these sections: 'Clinical Summary', 'Key Findings', and 'Reliability'."
+    )
+    
+    PROMPT_CRITIC = (
+        "You are a QA Auditor. Your job is to verify the accuracy of a generated medical report. "
+        "Check if the report mentions all the key features provided in the prompt. "
+        "If features are missing, list them."
     )
 
-    full_prompt = f"{system_prompt}\n\n{prompt}"
+    # --- AGENTIC LOOP ---
+    start_time = time.time()
+    
+    current_prompt = f"{PROMPT_GENERATOR}\n\n{prompt}"
+    explanation = ""
+    max_retries = 3
+    attempt = 0
+    
+    while attempt < max_retries:
+        try:
+            # 1. Generate Draft
+            payload = {"model": model, "prompt": current_prompt, "stream": False}
+            response = requests.post(OLLAMA_URL, json=payload)
+            response.raise_for_status()
+            explanation = response.json().get("response", "")
+            
+            # 2. Critic Step (Hybrid: Python Check + Implicit Logic)
+            # In a full production system, we'd ask the LLM to critique. 
+            # For speed and reliability here, we use Python to find missing features,
+            # acting as a deterministic Critic.
+            missing_features = []
+            explanation_lower = explanation.lower()
+            for feature in top_features:
+                if feature not in explanation_lower:
+                    missing_features.append(feature)
+            
+            # 3. Decision
+            if not missing_features:
+                # Pass!
+                break
+            
+            # 4. Refinement Instruction
+            print(f"    ! Critic (Attempt {attempt+1}): Missing features {missing_features}. Refining...")
+            refinement_instruction = (
+                f"Your previous draft missed the following key features: {', '.join(missing_features)}. "
+                f"Please rewrite the report to explicitly mention these features and their impact."
+                f"\n\nOriginal Data:\n{prompt}"
+            )
+            current_prompt = f"{PROMPT_GENERATOR}\n\n{refinement_instruction}"
+            attempt += 1
+            
+        except requests.exceptions.RequestException as e:
+            return f"Error communicating with Ollama: {e}", 0
 
-    payload = {
-        "model": model,
-        "prompt": full_prompt,
-        "stream": False
-    }
-
-    try:
-        start_time = time.time()
-        response = requests.post(OLLAMA_URL, json=payload)
-        response.raise_for_status()
-        end_time = time.time()
-        
-        result = response.json()
-        explanation = result.get("response", "")
-        duration = end_time - start_time
-        
-        return explanation, duration
-    except requests.exceptions.RequestException as e:
-        return f"Error communicating with Ollama: {e}", 0
+    end_time = time.time()
+    duration = end_time - start_time
+    
+    return explanation, duration
 
 def process_patient_files():
     """
