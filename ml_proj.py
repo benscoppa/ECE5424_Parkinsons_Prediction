@@ -1,5 +1,3 @@
-
-
 # parkinson_fnn_train.py
 # --------------------------------------------
 # Feedforward Neural Network for Parkinson’s Voice Classification
@@ -20,8 +18,8 @@ import numpy as np
 df = pd.read_csv("parkinsons.csv")
 
 # Target column is 'status': 1 = PD, 0 = Healthy
-X = df.drop(columns=['name', 'status'], errors='ignore').values
-y = df['status'].values
+X = df.drop(columns=["name", "status"], errors="ignore").values
+y = df["status"].values
 
 # 2. Preprocessing
 scaler = StandardScaler()
@@ -36,6 +34,7 @@ y_train = torch.tensor(y_train, dtype=torch.float32).unsqueeze(1)
 X_test = torch.tensor(X_test, dtype=torch.float32)
 y_test = torch.tensor(y_test, dtype=torch.float32).unsqueeze(1)
 
+
 # 3. Define FNN Model
 class ParkinsonFNN(nn.Module):
     def __init__(self, input_dim):
@@ -48,10 +47,12 @@ class ParkinsonFNN(nn.Module):
             nn.ReLU(),
             nn.Dropout(0.3),
             nn.Linear(64, 1),
-            nn.Sigmoid()
+            nn.Sigmoid(),
         )
+
     def forward(self, x):
         return self.net(x)
+
 
 model = ParkinsonFNN(X_train.shape[1])
 criterion = nn.BCELoss()
