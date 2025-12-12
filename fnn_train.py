@@ -1,4 +1,4 @@
-# parkinson_fnn_train.py
+# fnn_train.py
 # --------------------------------------------
 # Feedforward Neural Network for Parkinson’s Voice Classification
 # Author: Suchismita Batabyal, Virginia Tech ECE Dept
