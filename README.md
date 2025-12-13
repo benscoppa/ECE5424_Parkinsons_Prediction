@@ -26,7 +26,7 @@ ollama serve
 
 In project directory terminal:<br>
 ```bash
-ollama create parkinsons-agent -f Modelfile<br>
+ollama create parkinsons-agent -f Modelfile
 ```
 
 Verify the model exists in the new terminal:<br>
