@@ -16,12 +16,12 @@ pip install -r requirements.txt
 
 ## Install and Setup Ollama
 Download and install Ollama from:<br>
-https://ollama.com<br>
+https://ollama.com
 
 Then, in a new terminal:<br>
 ```bash
-ollama --version<br>
-ollama serve<br>
+ollama --version
+ollama serve
 ```
 
 In project directory terminal:<br>
@@ -31,7 +31,7 @@ ollama create parkinsons-agent -f Modelfile<br>
 
 Verify the model exists in the new terminal:<br>
 ```bash
-ollama list\
+ollama list
 ```
 
 ## Run Command Line Interface
