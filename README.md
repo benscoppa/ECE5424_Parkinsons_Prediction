@@ -3,8 +3,6 @@
 An explainable **Feedforward Neural Network (FNN)** for classifying Parkinson’s Disease from speech features.  
 Model predictions are interpreted using **SHAP**, and an **AI reasoning agent (Ollama)** is integrated to automatically summarize SHAP outputs in natural language.
 
----
-
 ### Clone the repository
 ```bash
 git clone https://github.com/benscoppa/ECE5424_Parkinsons_Prediction.git
