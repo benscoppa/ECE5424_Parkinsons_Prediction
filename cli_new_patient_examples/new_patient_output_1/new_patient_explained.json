@@ -1,0 +1,11 @@
+{
+  "patient_id": "patient_new_patient",
+  "prediction": {
+    "class": "Healthy",
+    "probability": 0.09785512834787369,
+    "confidence": 0.9021448716521263,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary:**\nThe voice biomarker assessment for patient_new_patient predicts a healthy individual with 90.2% confidence. The top contributing features suggest reduced vocal noise, disrupted vocal control dynamics, and vocal rigidity.\n\n**Key Findings:**\n\nThe analysis reveals that the patient's acoustic profile is characterized by:\n\n* A high Harmonics-to-Noise Ratio (HNR), indicating reduced vocal noise and hoarseness.\n* Abnormal Detrended Fluctuation Analysis (DFA) values, suggesting disrupted vocal control dynamics.\n* Reduced variability in Fundamental Frequency (MDVP:Fo(Hz)), indicating vocal rigidity.\n\nThese findings collectively suggest that the patient's voice is functioning within normal parameters, with no apparent signs of Parkinsonian motor symptoms such as rigidity, bradykinesia, or tremor.\n\n**Reliability:**\nThe high confidence level (90.2%) and consistent feature patterns support the reliability of this prediction. The top features all contribute to a healthy acoustic profile, with no conflicting evidence suggesting otherwise. While the clinical significance of some features (D2 and spread2) is unclear, their negative SHAP impacts reinforce the overall prediction.",
+  "generation_time_seconds": 54.390321254730225
+}

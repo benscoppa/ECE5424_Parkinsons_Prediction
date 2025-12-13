@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "patient_id": "patient_new_patient",
+    "model_version": "FNN_v1.0",
+    "analysis_date": "2025-12-12T22:57:25.471248"
+  },
+  "prediction": {
+    "class": "Healthy",
+    "probability": 0.09785512834787369,
+    "confidence": 0.9021448716521263,
+    "threshold": 0.5
+  },
+  "shap_analysis": {
+    "total_shap_contribution": -0.6473933050874621,
+    "mean_abs_shap": 0.03484241932164878,
+    "features_increasing_pd": 4,
+    "features_decreasing_pd": 18
+  },
+  "top_contributing_features": [
+    {
+      "rank": 1,
+      "feature_name": "HNR",
+      "feature_value": 0.9330881154320744,
+      "shap_value": -0.1194455698132515,
+      "contribution": "decreases",
+      "clinical_name": "Harmonics-to-Noise Ratio",
+      "normal_range": ">13 dB",
+      "pd_indication": "Reduced HNR indicates increased vocal noise and hoarseness"
+    },
+    {
+      "rank": 2,
+      "feature_name": "D2",
+      "feature_value": -1.065876814667465,
+      "shap_value": -0.10317904502153397,
+      "contribution": "decreases",
+      "clinical_name": "D2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    },
+    {
+      "rank": 3,
+      "feature_name": "DFA",
+      "feature_value": 0.7818991292837478,
+      "shap_value": -0.056368399411439896,
+      "contribution": "decreases",
+      "clinical_name": "Detrended Fluctuation Analysis",
+      "normal_range": "0.6-0.7",
+      "pd_indication": "Abnormal DFA indicates disrupted vocal control dynamics"
+    },
+    {
+      "rank": 4,
+      "feature_name": "MDVP:Fo(Hz)",
+      "feature_value": -0.9410141764499265,
+      "shap_value": -0.05245521664619446,
+      "contribution": "decreases",
+      "clinical_name": "Fundamental Frequency",
+      "normal_range": "85-180 Hz (male), 165-255 Hz (female)",
+      "pd_indication": "Reduced variability indicates vocal rigidity"
+    },
+    {
+      "rank": 5,
+      "feature_name": "spread2",
+      "feature_value": -0.34345221767387313,
+      "shap_value": -0.04774695262312889,
+      "contribution": "decreases",
+      "clinical_name": "spread2",
+      "normal_range": "Not specified",
+      "pd_indication": "Clinical interpretation not available"
+    }
+  ],
+  "all_feature_values": {
+    "MDVP:Fo(Hz)": -0.9410141764499265,
+    "MDVP:Fhi(Hz)": -0.8108550556276385,
+    "MDVP:Flo(Hz)": -0.17716397381516008,
+    "MDVP:Jitter(%)": -0.5998034564753498,
+    "MDVP:Jitter(Abs)": -0.4018994195636312,
+    "MDVP:RAP": -0.5764597736030419,
+    "MDVP:PPQ": -0.5292207362151888,
+    "Jitter:DDP": -0.5765392526405533,
+    "MDVP:Shimmer": -0.7804510559565971,
+    "MDVP:Shimmer(dB)": -0.7472659323126363,
+    "Shimmer:APQ3": -0.7449475198831057,
+    "Shimmer:APQ5": -0.7127802367617975,
+    "MDVP:APQ": -0.7543818118280348,
+    "Shimmer:DDA": -0.7449615194052361,
+    "NHR": -0.5168608011377952,
+    "HNR": 0.9330881154320744,
+    "RPDE": -0.892642088037027,
+    "DFA": 0.7818991292837478,
+    "spread1": -0.25968363066522815,
+    "spread2": -0.34345221767387313,
+    "D2": -1.065876814667465,
+    "PPE": -0.25014076919731376
+  },
+  "all_shap_values": {
+    "MDVP:Fo(Hz)": -0.05245521664619446,
+    "MDVP:Fhi(Hz)": 0.00451665697619319,
+    "MDVP:Flo(Hz)": -0.017756979912519455,
+    "MDVP:Jitter(%)": 0.011183273047208786,
+    "MDVP:Jitter(Abs)": 0.022821083664894104,
+    "MDVP:RAP": -0.03200751543045044,
+    "MDVP:PPQ": 0.02104894630610943,
+    "Jitter:DDP": -0.028703443706035614,
+    "MDVP:Shimmer": -0.012458182871341705,
+    "MDVP:Shimmer(dB)": -0.041078053414821625,
+    "Shimmer:APQ3": -0.018243148922920227,
+    "Shimmer:APQ5": -0.03969863802194595,
+    "MDVP:APQ": -0.012249057181179523,
+    "Shimmer:DDA": -0.023879399523139,
+    "NHR": -0.0023102506529539824,
+    "HNR": -0.1194455698132515,
+    "RPDE": -0.018329830840229988,
+    "DFA": -0.056368399411439896,
+    "spread1": -0.0350659042596817,
+    "spread2": -0.04774695262312889,
+    "D2": -0.10317904502153397,
+    "PPE": -0.045987676829099655
+  },
+  "clinical_prompt": "Analyze the following Parkinson's Disease voice biomarker assessment:\n\nPATIENT ID: patient_new_patient\nPREDICTION: Healthy\nCONFIDENCE: 90.2%\n\nTOP CONTRIBUTING FEATURES:\n\n1. Harmonics-to-Noise Ratio (HNR)\n   Patient Value: 0.9331\n   Normal Range: >13 dB\n   SHAP Impact: -0.1194 (\u2193 decreases PD probability)\n   Clinical Significance: Reduced HNR indicates increased vocal noise and hoarseness\n\n2. D2 (D2)\n   Patient Value: -1.0659\n   Normal Range: Not specified\n   SHAP Impact: -0.1032 (\u2193 decreases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\n3. Detrended Fluctuation Analysis (DFA)\n   Patient Value: 0.7819\n   Normal Range: 0.6-0.7\n   SHAP Impact: -0.0564 (\u2193 decreases PD probability)\n   Clinical Significance: Abnormal DFA indicates disrupted vocal control dynamics\n\n4. Fundamental Frequency (MDVP:Fo(Hz))\n   Patient Value: -0.9410\n   Normal Range: 85-180 Hz (male), 165-255 Hz (female)\n   SHAP Impact: -0.0525 (\u2193 decreases PD probability)\n   Clinical Significance: Reduced variability indicates vocal rigidity\n\n5. spread2 (spread2)\n   Patient Value: -0.3435\n   Normal Range: Not specified\n   SHAP Impact: -0.0477 (\u2193 decreases PD probability)\n   Clinical Significance: Clinical interpretation not available\n\nTASK: Based on the SHAP analysis above, provide a clinical interpretation that:\n1. Summarizes the key acoustic findings in 2-3 sentences\n2. Explains what the top features indicate about vocal function\n3. Relates findings to PD motor symptoms (rigidity, bradykinesia, tremor)\n4. Assesses the reliability of this prediction based on feature patterns\n\nKeep the explanation concise and accessible to healthcare providers.\n"
+}

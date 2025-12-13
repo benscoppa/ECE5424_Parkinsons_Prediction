@@ -1,4 +1,4 @@
-# main.py
+# main_pipeline.py
 # -------------------------------------------------
 # Authors: Dominic Jibin James, Ben Scoppa Virginia Tech ECE Dept
 # -------------------------------------------------
@@ -11,14 +11,15 @@
 # -------------------------------------------------
 
 import warnings
-
 warnings.filterwarnings("ignore")
 
 import numpy as np
 import pandas as pd
 import torch
+
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 
 from agent_ollama import process_patient_files
 from benchmark_agent import run_benchmark
