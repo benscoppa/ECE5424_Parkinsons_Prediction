@@ -36,7 +36,7 @@ ollama list
 
 ## Run Command Line Interface
 The command line interface is used to run a single patient's biomarkers through the pipeline and save an output waterfall graph and natural language analysis<br>
-Note: The CSV formatting must exactly match parkinsons.csv, except excluding name and status<br>
+Note: The CSV formatting must exactly match parkinsons.csv, but excluding name and status (see examples in 'cli_new_patient_examples')<br>
 ```bash
 python new_patient_cli.py --patient-file <path_to_csv> --output-dir <output_directory>
 ```
