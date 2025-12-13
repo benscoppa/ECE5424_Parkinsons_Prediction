@@ -1,0 +1,11 @@
+{
+  "patient_id": "patient_new_patient",
+  "prediction": {
+    "class": "Parkinson's Disease",
+    "probability": 0.9991326928138733,
+    "confidence": 0.9991326928138733,
+    "threshold": 0.5
+  },
+  "explanation": "**Clinical Summary:**\nThe patient_new_patient has a high confidence prediction of Parkinson's Disease (PD) with a confidence level of 99.9%. The acoustic voice biomarkers suggest that the patient's vocal function is impaired, characterized by increased noise, irregular vibration, and motor impairment.\n\n**Key Findings:**\n\n1. **Harmonics-to-Noise Ratio (HNR):** A reduced HNR indicates increased vocal noise and hoarseness, which is a common symptom of PD.\n2. **spread1:** Although the clinical significance is not explicitly stated, the high SHAP impact suggests that spread1 may be contributing to the PD prediction. Further investigation is needed to understand its role in vocal function.\n3. **Pitch Period Entropy (PPE):** Increased PPE indicates irregular vocal fold vibration, which can lead to speech difficulties and motor symptoms like bradykinesia.\n4. **Fundamental Frequency (MDVP:Fo) and Minimum Vocal Frequency (MDVP:Flo):** Reduced variability in fundamental frequency and a narrowed frequency range suggest vocal rigidity and motor impairment, consistent with PD.\n\n**Reliability:**\nThe high confidence prediction and the presence of multiple acoustic biomarkers supporting the diagnosis increase the reliability of this prediction. The spread1 feature's high SHAP impact adds to the overall confidence, although its clinical significance is unclear. The consistency between the acoustic findings and PD motor symptoms further supports the reliability of this prediction.\n\nIn summary, the patient_new_patient's acoustic voice biomarkers suggest a high likelihood of Parkinson's Disease, characterized by vocal noise, irregular vibration, and motor impairment. Further investigation is needed to fully understand the role of spread1 in vocal function and to confirm the diagnosis.",
+  "generation_time_seconds": 250.94638061523438
+}

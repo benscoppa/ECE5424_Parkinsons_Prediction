@@ -1,1 +1,15 @@
-# Add preoject dependencies here
+# Machine Learning
+torch>=2.0
+numpy>=1.23
+pandas>=1.5
+scikit-learn>=1.2
+
+# Explainability and Visualization
+shap>=0.44
+matplotlib>=3.7
+
+# LLM Agent
+requests>=2.28
+
+# Utilities
+tqdm>=4.65
